@@ -85,9 +85,14 @@
   /* width: 800px; */
   /* margin: auto; */
 }
+
 .project-header {
   font-size: 30px;
   font-weight: bold;
+}
+
+.project-description {
+  margin-bottom: 5px;
 }
 
 .project-image {

@@ -5,6 +5,7 @@ import BlockchainExperience from './Components/BlockchainExperience.js'
 import delibImage from './delib.png'
 import destoreImage from './destore.png'
 import devchainImage from './devchain.png'
+import googleMusicVisualizer from './google-music-visualizer.png'
 
 function App() {
   return (
@@ -77,38 +78,59 @@ function App() {
             projectLink="https://github.com/zhiwenh/lolcooldown"
           />
         </div>
-        <div className="blockchain-experience-wrapper">
-          <div className="blockchain-experience-header">
-            Blockchain Experience
+        <div>
+          <ProjectList
+            projectName="Google Music Visualizer"
+            projectImage={googleMusicVisualizer}
+            projectDescription="A music visualizer for Google Play Music."
+            projectLink="https://github.com/zhiwenh/google-music-visualizer"
+          />
+        </div>
+      </div>
+      <div className="blockchain-experience-wrapper">
+        <div className="blockchain-experience-header">
+          Blockchain Experience
+        </div>
+        <div>
+          <div>
+            <BlockchainExperience
+              blockchainExperienceListItem="ERC20 tokens"
+              blockchainExperienceItemSummary=
+                "Created ERC20 tokens to be used for companies."
+            />
           </div>
           <div>
-            <div>
-              <BlockchainExperience
-                blockchainExperienceListItem="ERC20 tokens"
-                blockchainExperienceItemSummary=
-                  "Created ERC20 tokens to be used for companies"
-              />
-            </div>
-            <div>
-              <BlockchainExperience
-                blockchainExperienceListItem="Decentralized finance"
-              />
-            </div>
-            <div>
-              <BlockchainExperience
-                blockchainExperienceListItem="NFT marketplaces"
-              />
-            </div>
-            <div>
-              <BlockchainExperience
-                blockchainExperienceListItem="ERC721 and ERC1155 tokens"
-              />
-            </div>
-            <div>
-              <BlockchainExperience
-                blockchainExperienceListItem="Cryptocurrency exchanges"
-              />
-            </div>
+            <BlockchainExperience
+              blockchainExperienceListItem="Decentralized finance"
+              blockchainExperienceItemSummary=
+                "Worked on decentralized financial applications for a company.
+                Worked on their staking smart contract, frontend, and backend."
+            />
+          </div>
+          <div>
+            <BlockchainExperience
+              blockchainExperienceListItem="NFT marketplaces"
+              blockchainExperienceItemSummary=
+                "Created a NFT marketplace. Created the smart contract and implemented
+                the backend connection with it."
+            />
+          </div>
+          <div>
+            <BlockchainExperience
+              blockchainExperienceListItem="ERC721 and ERC1155 tokens"
+              blockchainExperienceItemSummary=
+                "Worked on ERC721 tokens and ERC1155 tokens. Created the ability
+                to mint ERC721 in a finanical application. Also worked on a generative
+                artwork ERC721 project. I created the smart contract for it."
+            />
+          </div>
+          <div>
+            <BlockchainExperience
+              blockchainExperienceListItem="Cryptocurrency exchanges"
+              blockchainExperienceItemSummary=
+                "Worked a decentralized crytocurrency exchange and also worked on
+                the architecture of a centralized crytocurrency exchange."
+            />
           </div>
         </div>
       </div>

@@ -8,13 +8,15 @@ export default function ProjectList(
       <div className="project-header">
         {projectName}
       </div>
-      <div>
-        <img src={projectImage} className="project-image" />
-      </div>
-      <div>
+      <div className="project-description">
         {projectDescription}
       </div>
-      <a href={projectLink}> 
+      <div>
+        <a href={projectLink}>
+          <img src={projectImage} className="project-image" />
+        </a>
+      </div>
+      <a href={projectLink}>
         {projectLink}
       </a>
     </div>
