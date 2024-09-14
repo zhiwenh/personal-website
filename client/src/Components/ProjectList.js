@@ -4,7 +4,7 @@ export default function ProjectList(
   {projectName, projectDescription, projectLink, projectImage}
 ) {
   return (
-    <div>
+    <div className="project">
       <div className="project-header">
         {projectName}
       </div>
@@ -14,7 +14,7 @@ export default function ProjectList(
       <div>
         {projectDescription}
       </div>
-      <a>
+      <a href={projectLink}> 
         {projectLink}
       </a>
     </div>

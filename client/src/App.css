@@ -37,27 +37,75 @@
   }
 }
 
+.name-wrap {
+  margin-bottom: 30px;
+}
+
 .name {
   font-size: 50px;
+  font-weight: bold;
+}
+
+.summary-wrap {
+  margin-bottom: 30px;
 }
 
 .summary-header {
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.summary {
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+}
+
+.links-wrap {
+  margin-bottom: 30px;
 }
 
 .links-header {
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.project-wrap {
+  margin-bottom: 30px;
 }
 
 .project-list-header {
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
+.project {
+  margin-bottom: 30px;
+  /* width: 800px; */
+  /* margin: auto; */
+}
 .project-header {
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .project-image {
   width: 50%;
   height: 50%;
+}
+
+.blockchain-experience-wrapper {
+  margin-bottom: 30px;
+}
+
+.blockchain-experience-header {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.blockchain-experience-list-item {
+  margin: auto;
+  text-align: center;
 }

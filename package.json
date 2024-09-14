@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server/index.js",
-    "build": "cd client && npm install && npm run build"
+    "build": "cd client && npm install && npm run build",
+    "watch": "npm-watch"
   },
   "engines": {
     "node": "20.17.0"
@@ -15,10 +16,13 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^4.21.0",
-    "npm-watch": "^0.13.0"
+    "express": "^4.21.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.4",
+    "npm-watch": "^0.13.0"
+  },
+  "watch": {
+    "build": "client/src/"
   }
 }
