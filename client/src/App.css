@@ -129,3 +129,31 @@
   text-align: left;
   font-size: 20px;
 }
+
+.education-wrap {
+  margin-bottom: 60px;
+}
+
+.education-header {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.education {
+  margin-bottom: 10px;
+}
+
+.education-name {
+  font-size: 25px;
+  text-align: left;
+}
+
+.education-degree {
+  font-size: 20px;
+  text-align: left;
+}
+
+.education-description {
+  font-size: 20px;
+  text-align: left;
+}

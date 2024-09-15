@@ -1,7 +1,8 @@
 import './App.css';
-import ProjectList from './Components/ProjectList.js'
+import Project from './Components/Project.js'
 import BlockchainExperience from './Components/BlockchainExperience.js'
 import WorkExperience from './Components/WorkExperience.js'
+import Education from './Components/Education.js'
 import delibImage from './delib.png'
 import destoreImage from './destore.png'
 import devchainImage from './devchain.png'
@@ -52,7 +53,7 @@ function App() {
           Project List
         </div>
         <div>
-          <ProjectList
+          <Project
             projectName="Destore"
             projectImage={destoreImage}
             projectDescription="A file storage platform built on Ethereum. Used IPFS
@@ -61,7 +62,7 @@ function App() {
           />
         </div>
         <div>
-          <ProjectList
+          <Project
             projectName="Delib"
             projectImage={delibImage}
             projectDescription="A simple Ethereum framework. It allows you to
@@ -71,7 +72,7 @@ function App() {
           />
         </div>
         <div>
-          <ProjectList
+          <Project
             projectName="Devchain"
             projectImage={devchainImage}
             projectDescription="A private Ethereum blockchain generator. Allows you
@@ -80,7 +81,7 @@ function App() {
           />
         </div>
         <div>
-          <ProjectList
+          <Project
             projectName="League of Legends Cooldown Tracker"
             projectImage={leagueOfLegendsCooldownTracker}
             projectDescription="A cooldown tracker for League of Legends that worked on
@@ -90,7 +91,7 @@ function App() {
           />
         </div>
         <div>
-          <ProjectList
+          <Project
             projectName="Google Music Visualizer"
             projectImage={googleMusicVisualizer}
             projectDescription="A music visualizer for Google Play Music."
@@ -189,6 +190,25 @@ function App() {
                 the architecture of a centralized crytocurrency exchange."
             />
           </div>
+        </div>
+      </div>
+      <div className="education-wrap">
+        <div className="education-header">
+          Education
+        </div>
+        <div>
+          <Education
+            educationName="Codesmith"
+            educationDegree="Software Engineering Immersive Program."
+            educationDescription="Codesmith teaches you software engineering
+            and full stack Javascript development."
+          />
+        </div>
+        <div>
+          <Education
+            educationName="University of Florida"
+            educationDegree="Bachelor of Science in Mechanical Engineering"
+          />
         </div>
       </div>
     </div>

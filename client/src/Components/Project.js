@@ -1,6 +1,6 @@
 import './../App.css';
 
-export default function ProjectList(
+export default function Project(
   {projectName, projectDescription, projectLink, projectImage, customizedClassName}
 ) {
   if (!customizedClassName) {
