@@ -3,6 +3,7 @@ import Project from './Components/Project.js'
 import BlockchainExperience from './Components/BlockchainExperience.js'
 import WorkExperience from './Components/WorkExperience.js'
 import Education from './Components/Education.js'
+import personalImage from './personal-image.png'
 import delibImage from './delib.png'
 import destoreImage from './destore.png'
 import devchainImage from './devchain.png'
@@ -18,7 +19,12 @@ function App() {
         </div>
       </div>
       <div className="personal-image-wrap">
-        <img />
+        <img className="personal-image" src={personalImage}/>
+      </div>
+      <div className="short-summary-wrap">
+        <div className="short-summary">
+          Software Engineer | Blockchain Engineer
+        </div>
       </div>
       <div class="about-me-wrap">
         <div>

@@ -8,11 +8,29 @@
 
 .name-wrap {
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .name {
   font-size: 50px;
   font-weight: bold;
+}
+
+.personal-image-wrap {
+  margin-bottom: 20px;
+}
+
+.personal-image {
+  width: 30%;
+  height: 30%;
+}
+
+.short-summary-wrap {
+  margin-bottom: 60px;
+}
+
+.short-summary {
+  font-size: 20px;
 }
 
 .about-me-wrap {
