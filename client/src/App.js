@@ -31,7 +31,7 @@ function App() {
           and blockchains. I have worked in the blockchain role of 4 companies
           and helped them with decentralized finance applications, ERC20 tokens,
           NFTs, and more. I have also created Ethereum blockchain projects. They
-          can be viewed in the projects list. I have React and Angular experience
+          can be viewed in the projects list. I also have React and Angular experience
           and have developed websites with them.
         </div>
       </div>
