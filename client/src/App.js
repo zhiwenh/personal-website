@@ -19,13 +19,13 @@ function App() {
       <div className="personal-image-wrap">
         <img />
       </div>
-      <div class="summary-wrap">
+      <div class="about-me-wrap">
         <div>
-          <h className="summary-header">
+          <h className="about-me-header">
             About me
           </h>
         </div>
-        <div className="summary">
+        <div className="about-me">
           I am a software engineer with experience in full stack development
           and blockchains. I have worked in the blockchain role of 4 companies
           and helped them with decentralized finance applications, ERC20 tokens,
@@ -38,11 +38,13 @@ function App() {
         <div className="links-header">
           Links
         </div>
-        <div>
-          Linkedin link: <a href="https://linkedin.com/in/zhiwenhuang0">https://linkedin.com/in/zhiwenhuang0</a>
-        </div>
-        <div>
-          Github link: <a href="https://github.com/zhiwenh">https://github.com/zhiwenh</a>
+        <div className="links">
+          <div>
+            Linkedin link: <a href="https://linkedin.com/in/zhiwenhuang0">https://linkedin.com/in/zhiwenhuang0</a>
+          </div>
+          <div>
+            Github link: <a href="https://github.com/zhiwenh">https://github.com/zhiwenh</a>
+          </div>
         </div>
       </div>
       <div className="projects-wrap">
@@ -93,11 +95,10 @@ function App() {
             projectImage={googleMusicVisualizer}
             projectDescription="A music visualizer for Google Play Music."
             projectLink="https://github.com/zhiwenh/google-music-visualizer"
-            customizedClassName="project-google-music-visualizer"
           />
         </div>
       </div>
-      <div className="work-experience-wrapper">
+      <div className="work-experience-wrap">
         <div className="work-experience-header">
           Work Experience
         </div>
@@ -136,7 +137,7 @@ function App() {
           />
         </div>
       </div>
-      <div className="blockchain-experience-wrapper">
+      <div className="blockchain-experience-wrap">
         <div className="blockchain-experience-header">
           Blockchain Experience
         </div>
@@ -168,7 +169,7 @@ function App() {
             <BlockchainExperience
               blockchainExperienceListItem="Buy, sell, and auction smart contracts"
               blockchainExperienceItemSummary=
-                "Created buy, sell, and auction smart contracts for someone"
+                "Created buy, sell, and auction smart contracts for someone."
             />
           </div>
           <div>
