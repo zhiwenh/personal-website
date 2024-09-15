@@ -1,4 +1,5 @@
 import './App.css';
+import NavBarItem from './Components/NavBarItem.js';
 import Project from './Components/Project.js'
 import BlockchainExperience from './Components/BlockchainExperience.js'
 import WorkExperience from './Components/WorkExperience.js'
@@ -12,53 +13,81 @@ import googleMusicVisualizer from './google-music-visualizer.png'
 
 function App() {
   return (
-    <div className="App">
-      <div className="name-wrap">
-        <div className="name">
-          Zhiwen Huang
+    <div>
+      <div className="nav-bar-wrap">
+        <div className="nav-bar">
+          <NavBarItem
+            navBarLink="#about-me-wrap-id"
+            navBarLinkText="About me"
+          />
+          <NavBarItem
+            navBarLink="#links-wrap-id"
+            navBarLinkText="Links"
+          />
+          <NavBarItem
+          navBarLink="#projects-wrap-id"
+            navBarLinkText="Project List"
+          />
+          <NavBarItem
+            navBarLink="#work-experience-wrap-id"
+            navBarLinkText="Work Experience"
+          />
+          <NavBarItem
+            navBarLink="#blockchain-experience-wrap-id"
+            navBarLinkText="Blockchain Experience"
+          />
+          <NavBarItem
+            navBarLink="#education-wrap-id"
+            navBarLinkText="Education"
+          />
         </div>
       </div>
-      <div className="personal-image-wrap">
-        <img className="personal-image" src={personalImage}/>
-      </div>
-      <div className="short-summary-wrap">
-        <div className="short-summary">
-          Software Engineer | Blockchain Engineer
-        </div>
-      </div>
-      <div class="about-me-wrap">
-        <div>
-          <h className="about-me-header">
-            About me
-          </h>
-        </div>
-        <div className="about-me">
-          I am a software engineer with experience in full stack development
-          and blockchains. I have worked in the blockchain role of 4 companies
-          and helped them with decentralized finance applications, ERC20 tokens,
-          NFTs, and more. I have also created Ethereum blockchain projects. They
-          can be viewed in the projects list. I also have React and Angular experience
-          and have developed websites with them.
-        </div>
-      </div>
-      <div className="links-wrap">
-        <div className="links-header">
-          Links
-        </div>
-        <div className="links">
-          <div>
-            Linkedin link: <a href="https://linkedin.com/in/zhiwenhuang0">https://linkedin.com/in/zhiwenhuang0</a>
-          </div>
-          <div>
-            Github link: <a href="https://github.com/zhiwenh">https://github.com/zhiwenh</a>
+      <div className="App">
+        <div className="name-wrap">
+          <div className="name">
+            Zhiwen Huang
           </div>
         </div>
-      </div>
-      <div className="projects-wrap">
-        <div className="project-list-header">
-          Project List
+        <div className="personal-image-wrap">
+          <img className="personal-image" src={personalImage}/>
         </div>
-        <div>
+        <div className="short-summary-wrap">
+          <div className="short-summary">
+            Software Engineer | Blockchain Engineer
+          </div>
+        </div>
+        <div class="about-me-wrap" id="about-me-wrap-id">
+          <div>
+            <h className="about-me-header">
+              About me
+            </h>
+          </div>
+          <div className="about-me">
+            I am a software engineer with experience in full stack development
+            and blockchains. I have worked in the blockchain role of 4 companies
+            and helped them with decentralized finance applications, ERC20 tokens,
+            NFTs, and more. I have also created Ethereum blockchain projects. They
+            can be viewed in the projects list. I also have React and Angular experience
+            and have developed websites with them.
+          </div>
+        </div>
+        <div className="links-wrap" id="links-wrap-id">
+          <div className="links-header">
+            Links
+          </div>
+          <div className="links">
+            <div>
+              Linkedin link: <a href="https://linkedin.com/in/zhiwenhuang0">https://linkedin.com/in/zhiwenhuang0</a>
+            </div>
+            <div>
+              Github link: <a href="https://github.com/zhiwenh">https://github.com/zhiwenh</a>
+            </div>
+          </div>
+        </div>
+        <div className="projects-wrap" id="projects-wrap-id">
+          <div className="project-list-header">
+            Project List
+          </div>
           <Project
             projectName="Destore"
             projectImage={destoreImage}
@@ -66,8 +95,6 @@ function App() {
               for the ability to send files to other people."
             projectLink="https://github.com/zhiwenh/destore"
           />
-        </div>
-        <div>
           <Project
             projectName="Delib"
             projectImage={delibImage}
@@ -76,8 +103,6 @@ function App() {
               create decentralized applications with the smart contracts you created."
             projectLink="https://github.com/zhiwenh/delib"
           />
-        </div>
-        <div>
           <Project
             projectName="Devchain"
             projectImage={devchainImage}
@@ -85,8 +110,6 @@ function App() {
               to easily set up testnets to test your blockchain applications on."
             projectLink="https://github.com/zhiwenh/devchain"
           />
-        </div>
-        <div>
           <Project
             projectName="League of Legends Cooldown Tracker"
             projectImage={leagueOfLegendsCooldownTracker}
@@ -95,8 +118,6 @@ function App() {
             projectLink="https://github.com/zhiwenh/lolcooldown"
             customizedClassName="project-league-of-legends-cooldown-tracker"
           />
-        </div>
-        <div>
           <Project
             projectName="Google Music Visualizer"
             projectImage={googleMusicVisualizer}
@@ -104,82 +125,62 @@ function App() {
             projectLink="https://github.com/zhiwenh/google-music-visualizer"
           />
         </div>
-      </div>
-      <div className="work-experience-wrap">
-        <div className="work-experience-header">
-          Work Experience
-        </div>
-        <div>
+        <div className="work-experience-wrap" id="work-experience-wrap-id">
+          <div className="work-experience-header">
+            Work Experience
+          </div>
           <WorkExperience
             companyName="Synapse"
             companyDescription="Worked on uploading nodes to be used to connect
             to blockchain networks. Also worked on other blockchain related features."
           />
-        </div>
-        <div>
           <WorkExperience
             companyName="Icered"
             companyDescription="Worked on updating their blockchain related features
             in their applications."
           />
-        </div>
-        <div>
           <WorkExperience
             companyName="Darwins"
             companyDescription="Worked on their applications with focus on decentralized
             finance. Also did backend and frontend work as well."
           />
-        </div>
-        <div>
           <WorkExperience
             companyName="Halo Platform"
             companyDescription="Worked on a decentralized trading platform."
           />
-        </div>
-        <div>
           <WorkExperience
             companyName="Florida Biologix"
             companyDescription="Worked in the manufacturing department of the company
             producing large volumes of product related cell culture."
           />
         </div>
-      </div>
-      <div className="blockchain-experience-wrap">
-        <div className="blockchain-experience-header">
-          Blockchain Experience
-        </div>
-        <div>
+        <div className="blockchain-experience-wrap" id="blockchain-experience-wrap-id">
+          <div className="blockchain-experience-header">
+            Blockchain Experience
+          </div>
           <div>
             <BlockchainExperience
               blockchainExperienceListItem="ERC20 tokens"
               blockchainExperienceItemSummary=
                 "Created ERC20 tokens to be used for companies."
             />
-          </div>
-          <div>
             <BlockchainExperience
               blockchainExperienceListItem="Decentralized finance"
               blockchainExperienceItemSummary=
                 "Worked on decentralized financial applications for a company.
                 Worked on their staking smart contract, frontend, and backend."
             />
-          </div>
-          <div>
             <BlockchainExperience
               blockchainExperienceListItem="NFT marketplaces"
               blockchainExperienceItemSummary=
                 "Created a NFT marketplace. Created the smart contract and implemented
                 the backend connection with it."
             />
-          </div>
-          <div>
             <BlockchainExperience
               blockchainExperienceListItem="Buy, sell, and auction smart contracts"
               blockchainExperienceItemSummary=
                 "Created buy, sell, and auction smart contracts for someone."
             />
-          </div>
-          <div>
             <BlockchainExperience
               blockchainExperienceListItem="ERC721 and ERC1155 tokens"
               blockchainExperienceItemSummary=
@@ -187,8 +188,6 @@ function App() {
                 to mint ERC721 in a finanical application. Also worked on a generative
                 artwork ERC721 project. I created the smart contract for it."
             />
-          </div>
-          <div>
             <BlockchainExperience
               blockchainExperienceListItem="Cryptocurrency exchanges"
               blockchainExperienceItemSummary=
@@ -197,23 +196,21 @@ function App() {
             />
           </div>
         </div>
-      </div>
-      <div className="education-wrap">
-        <div className="education-header">
-          Education
-        </div>
-        <div>
+        <div className="education-wrap" id="education-wrap-id">
+          <div className="education-header">
+            Education
+          </div>
           <Education
             educationName="Codesmith"
             educationDegree="Software Engineering Immersive Program"
             educationDescription="Codesmith teaches you software engineering
             and full stack Javascript development."
+            educationLink="https://www.codesmith.io/"
           />
-        </div>
-        <div>
           <Education
             educationName="University of Florida"
             educationDegree="Bachelor of Science in Mechanical Engineering"
+            educationLink="https://www.ufl.edu/"
           />
         </div>
       </div>
