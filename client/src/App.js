@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import ProjectList from './Components/ProjectList.js'
 import BlockchainExperience from './Components/BlockchainExperience.js'
@@ -54,7 +53,8 @@ function App() {
           <ProjectList
             projectName="Destore"
             projectImage={destoreImage}
-            projectDescription="A file storage platform built on Ethereum."
+            projectDescription="A file storage platform built on Ethereum. Used IPFS
+              for the ability to send files to other people."
             projectLink="https://github.com/zhiwenh/destore"
           />
         </div>
@@ -62,7 +62,9 @@ function App() {
           <ProjectList
             projectName="Delib"
             projectImage={delibImage}
-            projectDescription="A simple Ethereum framework."
+            projectDescription="A simple Ethereum framework. It allows you to
+              compile, build, and deploy smart contracts. It also allows you to easily
+              create decentralized applications with the smart contracts you created."
             projectLink="https://github.com/zhiwenh/delib"
           />
         </div>
@@ -70,7 +72,8 @@ function App() {
           <ProjectList
             projectName="Devchain"
             projectImage={devchainImage}
-            projectDescription="A private Ethereum blockchain generator."
+            projectDescription="A private Ethereum blockchain generator. Allows you
+              to easily set up testnets to test your blockchain applications on."
             projectLink="https://github.com/zhiwenh/devchain"
           />
         </div>
@@ -78,8 +81,10 @@ function App() {
           <ProjectList
             projectName="League of Legends Cooldown Tracker"
             projectImage={leagueOfLegendsCooldownTracker}
-            projectDescription="A cooldown tracker for League of Legendsr."
+            projectDescription="A cooldown tracker for League of Legends that worked on
+            IOS and Android. Used React Native to work on a mobile devices."
             projectLink="https://github.com/zhiwenh/lolcooldown"
+            customizedClassName="project-league-of-legends-cooldown-tracker"
           />
         </div>
         <div>
@@ -88,6 +93,46 @@ function App() {
             projectImage={googleMusicVisualizer}
             projectDescription="A music visualizer for Google Play Music."
             projectLink="https://github.com/zhiwenh/google-music-visualizer"
+            customizedClassName="project-google-music-visualizer"
+          />
+        </div>
+      </div>
+      <div className="work-experience-wrapper">
+        <div className="work-experience-header">
+          Work Experience
+        </div>
+        <div>
+          <WorkExperience
+            companyName="Synapse"
+            companyDescription="Worked on uploading nodes to be used to connect
+            to blockchain networks. Also worked on other blockchain related features."
+          />
+        </div>
+        <div>
+          <WorkExperience
+            companyName="Icered"
+            companyDescription="Worked on updating their blockchain related features
+            in their applications."
+          />
+        </div>
+        <div>
+          <WorkExperience
+            companyName="Darwins"
+            companyDescription="Worked on their applications with focus on decentralized
+            finance. Also did backend and frontend work as well."
+          />
+        </div>
+        <div>
+          <WorkExperience
+            companyName="Halo Platform"
+            companyDescription="Worked on a decentralized trading platform."
+          />
+        </div>
+        <div>
+          <WorkExperience
+            companyName="Florida Biologix"
+            companyDescription="Worked in the manufacturing department of the company
+            producing large volumes of product related cell culture."
           />
         </div>
       </div>
@@ -121,6 +166,13 @@ function App() {
           </div>
           <div>
             <BlockchainExperience
+              blockchainExperienceListItem="Buy, sell, and auction smart contracts"
+              blockchainExperienceItemSummary=
+                "Created buy, sell, and auction smart contracts for someone"
+            />
+          </div>
+          <div>
+            <BlockchainExperience
               blockchainExperienceListItem="ERC721 and ERC1155 tokens"
               blockchainExperienceItemSummary=
                 "Worked on ERC721 tokens and ERC1155 tokens. Created the ability
@@ -136,45 +188,6 @@ function App() {
                 the architecture of a centralized crytocurrency exchange."
             />
           </div>
-        </div>
-      </div>
-      <div className="work-experience-wrapper">
-        <div className="work-experience-header">
-          Work Experience
-        </div>
-        <div>
-          <WorkExperience
-            companyName="Synapse"
-            companyDescription="Worked on uploading nodes to be used to connect
-            to blockchain networks."
-          />
-        </div>
-        <div>
-          <WorkExperience
-            companyName="Icered"
-            companyDescription="Worked on updating their blockchain related features
-            in their applications."
-          />
-        </div>
-        <div>
-          <WorkExperience
-            companyName="Darwins"
-            companyDescription="Worked on their applications with focus on decentralized
-            finance. Also did backend and frontend work as well."
-          />
-        </div>
-        <div>
-          <WorkExperience
-            companyName="Halo Platform"
-            companyDescription="Worked on a decentralized trading platform."
-          />
-        </div>
-        <div>
-          <WorkExperience
-            companyName="Florida Biologix"
-            companyDescription="Worked in the manufacturing department of the company
-            producing large volumes of product related cell culture."
-          />
         </div>
       </div>
     </div>

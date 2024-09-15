@@ -1,42 +1,8 @@
 .App {
   text-align: center;
-  width: 800px;
+  width: 90%;
+  min-width: 400px;
   margin: auto;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .name-wrap {
@@ -78,17 +44,17 @@
 .project-list-header {
   font-size: 40px;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .project {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
   /* width: 800px; */
   /* margin: auto; */
 }
 
 .project-header {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
 }
 
@@ -97,8 +63,40 @@
 }
 
 .project-image {
-  width: 50%;
-  height: 50%;
+  width: 70%;
+  height: 70%;
+}
+
+.project-league-of-legends-cooldown-tracker {
+  width: 47%;
+  height: 47%;
+}
+
+.project-google-music-visualizer {
+  width: 87%;
+  height: 87%;
+}
+
+.work-experience-wrapper {
+  margin-bottom: 30px;
+}
+
+.work-experience-header {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.work-experience {
+  margin-bottom: 10px;
+}
+
+.work-experience-company-name {
+  font-size: 20px;
+  text-align: left;
+}
+
+.work-experience-company-description {
+  text-align: left;
 }
 
 .blockchain-experience-wrapper {
@@ -122,27 +120,5 @@
 }
 
 .blockchain-experience-item-summary {
-  text-align: left;
-}
-
-.work-experience-wrapper {
-  margin-bottom: 30px;
-}
-
-.work-experience-header {
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.work-experience {
-  margin-bottom: 10px;
-}
-
-.work-experience-company-name {
-  font-size: 20px;
-  text-align: left;
-}
-
-.work-experience-company-description {
   text-align: left;
 }
