@@ -124,3 +124,25 @@
 .blockchain-experience-item-summary {
   text-align: left;
 }
+
+.work-experience-wrapper {
+  margin-bottom: 30px;
+}
+
+.work-experience-header {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.work-experience {
+  margin-bottom: 10px;
+}
+
+.work-experience-company-name {
+  font-size: 20px;
+  text-align: left;
+}
+
+.work-experience-company-description {
+  text-align: left;
+}

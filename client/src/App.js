@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import ProjectList from './Components/ProjectList.js'
 import BlockchainExperience from './Components/BlockchainExperience.js'
+import WorkExperience from './Components/WorkExperience.js'
 import delibImage from './delib.png'
 import destoreImage from './destore.png'
 import devchainImage from './devchain.png'
@@ -135,6 +136,45 @@ function App() {
                 the architecture of a centralized crytocurrency exchange."
             />
           </div>
+        </div>
+      </div>
+      <div className="work-experience-wrapper">
+        <div className="work-experience-header">
+          Work Experience
+        </div>
+        <div>
+          <WorkExperience
+            companyName="Synapse"
+            companyDescription="Worked on uploading nodes to be used to connect
+            to blockchain networks."
+          />
+        </div>
+        <div>
+          <WorkExperience
+            companyName="Icered"
+            companyDescription="Worked on updating their blockchain related features
+            in their applications."
+          />
+        </div>
+        <div>
+          <WorkExperience
+            companyName="Darwins"
+            companyDescription="Worked on their applications with focus on decentralized
+            finance. Also did backend and frontend work as well."
+          />
+        </div>
+        <div>
+          <WorkExperience
+            companyName="Halo Platform"
+            companyDescription="Worked on a decentralized trading platform."
+          />
+        </div>
+        <div>
+          <WorkExperience
+            companyName="Florida Biologix"
+            companyDescription="Worked in the manufacturing department of the company
+            producing large volumes of product related cell culture."
+          />
         </div>
       </div>
     </div>
