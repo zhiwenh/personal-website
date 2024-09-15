@@ -12,14 +12,17 @@ export default function Project(
         <div className="project-description">
           {projectDescription}
         </div>
-        <div>
+        <div className="project-image-wrap">
           <a href={projectLink}>
             <img src={projectImage} className={customizedClassName} className="project-image"  />
           </a>
         </div>
-        <a href={projectLink}>
-          {projectLink}
-        </a>
+        <div className="project-link-wrap">
+          Project link: &nbsp;
+          <a href={projectLink} className="project-link">
+            {projectLink}
+          </a>
+        </div>
       </div>
     )
   } else {
@@ -31,7 +34,7 @@ export default function Project(
         <div className="project-description">
           {projectDescription}
         </div>
-        <div>
+        <div className="project-image-wrap">
           <a href={projectLink}>
             <img src={projectImage}
               className="project-image"
@@ -39,9 +42,12 @@ export default function Project(
             />
           </a>
         </div>
-        <a href={projectLink}>
-          {projectLink}
-        </a>
+        <div className="project-link-wrap">
+          Project link: &nbsp;
+          <a href={projectLink} className="project-link">
+            {projectLink}
+          </a>
+        </div>
       </div>
     )
   }

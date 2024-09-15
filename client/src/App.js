@@ -199,7 +199,7 @@ function App() {
         <div>
           <Education
             educationName="Codesmith"
-            educationDegree="Software Engineering Immersive Program."
+            educationDegree="Software Engineering Immersive Program"
             educationDescription="Codesmith teaches you software engineering
             and full stack Javascript development."
           />
