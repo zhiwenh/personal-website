@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  width: 800px;
+  margin: auto;
 }
 
 .App-logo {
@@ -56,8 +58,7 @@
 }
 
 .summary {
-  max-width: 800px;
-  text-align: center;
+  text-align: left;
   margin: auto;
 }
 
@@ -77,11 +78,11 @@
 .project-list-header {
   font-size: 40px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .project {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   /* width: 800px; */
   /* margin: auto; */
 }
@@ -102,6 +103,7 @@
 
 .blockchain-experience-wrapper {
   margin-bottom: 30px;
+  margin: auto;
 }
 
 .blockchain-experience-header {
@@ -110,7 +112,15 @@
   margin-bottom: 10px;
 }
 
+.blockchain-experience {
+  margin-bottom: 10px;
+}
+
 .blockchain-experience-list-item {
   margin: auto;
-  text-align: center;
+  text-align: left;
+}
+
+.blockchain-experience-item-summary {
+  text-align: left;
 }

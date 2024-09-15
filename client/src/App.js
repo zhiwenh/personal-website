@@ -5,6 +5,7 @@ import BlockchainExperience from './Components/BlockchainExperience.js'
 import delibImage from './delib.png'
 import destoreImage from './destore.png'
 import devchainImage from './devchain.png'
+import leagueOfLegendsCooldownTracker from './league-of-legends-cooldown-tracker.png'
 import googleMusicVisualizer from './google-music-visualizer.png'
 
 function App() {
@@ -29,7 +30,8 @@ function App() {
           and blockchains. I have worked in the blockchain role of 4 companies
           and helped them with decentralized finance applications, ERC20 tokens,
           NFTs, and more. I have also created Ethereum blockchain projects. They
-          can be viewed in the projects list.
+          can be viewed in the projects list. I have React and Angular experience
+          and have developed websites with them.
         </div>
       </div>
       <div className="links-wrap">
@@ -74,6 +76,7 @@ function App() {
         <div>
           <ProjectList
             projectName="League of Legends Cooldown Tracker"
+            projectImage={leagueOfLegendsCooldownTracker}
             projectDescription="A cooldown tracker for League of Legendsr."
             projectLink="https://github.com/zhiwenh/lolcooldown"
           />
