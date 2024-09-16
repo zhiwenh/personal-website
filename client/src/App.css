@@ -15,7 +15,7 @@ a, a:hover, a:visited, a:active {
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
-  background: #DCDCDC;
+  background-color: #ECF0F1;
   overflow: hidden;
 }
 
@@ -113,6 +113,10 @@ a, a:hover, a:visited, a:active {
 
 .project {
   margin-bottom: 40px;
+  border: solid;
+  border-color: #F5F5F5;
+  padding-top: 15px;
+  padding-bottom: 15px;
   /* width: 800px; */
   /* margin: auto; */
 }
@@ -166,7 +170,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .work-experience-company-name {
-  font-size: 25px;
+  font-size: 22px;
   text-align: left;
 }
 
@@ -192,7 +196,7 @@ a, a:hover, a:visited, a:active {
 .blockchain-experience-list-item {
   margin: auto;
   text-align: left;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .blockchain-experience-item-summary {
@@ -214,7 +218,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .education-name {
-  font-size: 25px;
+  font-size: 23px;
   text-align: left;
 }
 
@@ -224,6 +228,11 @@ a, a:hover, a:visited, a:active {
 }
 
 .education-description {
+  font-size: 20px;
+  text-align: left;
+}
+
+.education-link {
   font-size: 20px;
   text-align: left;
 }
