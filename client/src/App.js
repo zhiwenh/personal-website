@@ -167,8 +167,9 @@ function App() {
             <BlockchainExperience
               blockchainExperienceListItem="Decentralized finance"
               blockchainExperienceItemSummary=
-                "Worked on decentralized financial applications for a company.
-                Worked on their staking smart contract, frontend, and backend."
+                "Worked on decentralized financial applications for a company
+                that involved staking. Worked on their staking smart contract,
+                frontend, and backend."
             />
             <BlockchainExperience
               blockchainExperienceListItem="NFT marketplaces"
