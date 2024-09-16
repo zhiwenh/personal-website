@@ -8,6 +8,57 @@ a, a:hover, a:visited, a:active {
 
 }
 
+@media (min-width: 600px) {
+  .nav-bar-mobile-button {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-bar {
+    flex-direction: row;
+    justify-content: left;
+  }
+
+  .nav-bar-item {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+  }
+
+  .nav-bar-mobile-button {
+    margin-right: auto;
+    margin-left: 30px;
+  }
+}
+
+.nav-bar-mobile-button {
+  height: 35px;
+  width: 35px;
+  padding-top: 10px;
+}
+
+.nav-bar-mobile-button-1{
+  background-color: black;
+  height: 7px;
+  width: 25px;
+  margin-bottom: 2px;
+}
+
+.nav-bar-mobile-button-2 {
+  background-color: black;
+  height: 7px;
+  width: 25px;
+  margin-bottom: 2px;
+}
+
+.nav-bar-mobile-button-3 {
+  background-color: black;
+  height: 7px;
+  width: 25px;
+  margin-bottom: 2px;
+}
+
 .nav-bar {
   display: flex;
   justify-content: center;
@@ -48,7 +99,6 @@ a, a:hover, a:visited, a:active {
 .App {
   text-align: center;
   width: 90%;
-  min-width: 400px;
   max-width: 1000px;
   margin: auto;
 }

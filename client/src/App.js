@@ -16,6 +16,14 @@ function App() {
     <div>
       <div className="nav-bar-wrap">
         <div className="nav-bar">
+          <div className="nav-bar-mobile-button">
+            <div className="nav-bar-mobile-button-1">
+            </div>
+            <div className="nav-bar-mobile-button-2">
+            </div>
+            <div className="nav-bar-mobile-button-3">
+            </div>
+          </div>
           <NavBarItem
             navBarLink="#about-me-wrap-id"
             navBarLinkText="About me"

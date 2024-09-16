@@ -1,5 +1,6 @@
 import './../App.css';
 import { useRef } from "react";
+import NavBarItem from './NavBarItem.js'
 
 export default function NavBarItem(
   {navBarLink, navBarLinkText}
@@ -10,17 +11,19 @@ export default function NavBarItem(
 
   if (window.innerWidth > 400) {
     return (
-      <div className="nav-bar-item">
+      <div className="nav-bar">
         <a href={navBarLink} className="nav-bar-link">
           {navBarLinkText}
         </a>
       </div>
     )
   } else {
-    <div className="nav-bar-item-small-window">
-      <a href={navBarLink} className="nav-bar-link-small-window">
-        {navBarLinkText}
-      </a>
-    </div>
+    return (
+      <div className="nav-bar-item-small-window">
+        <a href={navBarLink} className="nav-bar-link-small-window">
+          {navBarLinkText}
+        </a>
+      </div>
+    )
   }
 }
