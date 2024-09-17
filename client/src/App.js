@@ -43,7 +43,7 @@ function App() {
         }
 
         mobileTabsOn = false;
-        
+
       } else {
         const navBar = document.querySelectorAll('.nav-bar');
         navBar[0].style.display = 'flex';
@@ -53,10 +53,17 @@ function App() {
 
         const navBarItems = document.querySelectorAll('.nav-bar-item');
         for (let i = 0; i < navBarItems.length; i++) {
-          navBarItems[i].style.visibility = "hidden";
-          navBarItems[i].style.height = "0px";
-          navBarItems[i].style.width = "0px";
-          navBarItems[i].style.marginBottom = "3px";
+          if (mobileTabsOn === false) {
+            navBarItems[i].style.visibility = "hidden";
+            navBarItems[i].style.height = "0px";
+            navBarItems[i].style.width = "0px";
+            navBarItems[i].style.marginBottom = "0px";
+          } else {
+            navBarItems[i].style.visibility = "visible";
+            navBarItems[i].style.height = "auto";
+            navBarItems[i].style.width = "auto";
+            navBarItems[i].style.marginBottom = "3px";
+          }
         }
       }
     };
