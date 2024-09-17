@@ -36,7 +36,7 @@ a, a:hover, a:visited, a:active {
   .nav-bar-mobile-button {
     margin-right: auto;
     margin-left: 30px;
-    display: block;
+    display: visible;
     width: 35px;
   }
 }
