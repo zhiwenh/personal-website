@@ -180,9 +180,8 @@ a, a:hover, a:visited, a:active {
 .project {
   margin-bottom: 40px;
   border: solid;
-  border-color: #F4F6F7;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  border-color: #D0D3D4;
+  padding: 15px;
   /* width: 800px; */
   /* margin: auto; */
 }
@@ -236,7 +235,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .work-experience-company-name {
-  font-size: 22px;
+  font-size: 20px;
   text-align: left;
 }
 
@@ -284,7 +283,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .education-name {
-  font-size: 23px;
+  font-size: 20px;
   text-align: left;
 }
 
