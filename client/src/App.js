@@ -2,6 +2,7 @@ import React, {
     useState,
     useEffect
 } from 'react';
+import $ from "jquery";
 import './App.css';
 import NavBarItem from './Components/NavBarItem.js';
 import Project from './Components/Project.js'
@@ -76,6 +77,7 @@ function App() {
   }, []);
 
   function onMobileButtonClick() {
+
     if (mobileTabsOn === false) {
       const navBar = document.querySelectorAll('.nav-bar');
       console.log('nav bar', navBar);
@@ -85,9 +87,10 @@ function App() {
       navBar[0].style.alignItems = 'center';
 
       const navBarItems = document.querySelectorAll('.nav-bar-item');
-      console.log('nav bar items', navBarItems);
+
       for (let i = 0; i < navBarItems.length; i++) {
         console.log('nav bar item', navBarItems[i])
+        $('.nav-bar-item').slideDown();
         navBarItems[i].style.visibility = "visible";
         navBarItems[i].style.height = "auto";
         navBarItems[i].style.width = "auto";
