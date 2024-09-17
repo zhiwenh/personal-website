@@ -1,3 +1,7 @@
+import React, {
+    useState,
+    useEffect
+} from 'react';
 import './App.css';
 import NavBarItem from './Components/NavBarItem.js';
 import Project from './Components/Project.js'
@@ -12,11 +16,98 @@ import leagueOfLegendsCooldownTracker from './league-of-legends-cooldown-tracker
 import googleMusicVisualizer from './google-music-visualizer.png'
 
 function App() {
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight
+  });
+
+  let mobileTabsOn = false;
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 600) {
+        console.log('window size bigger than 600');
+
+        const navBar = document.querySelectorAll('.nav-bar');
+        navBar[0].style.display = 'flex';
+        navBar[0].style.flexDirection = 'row';
+        navBar[0].style.justifyContent = 'center';
+        navBar[0].style.alignItems = 'center';
+
+        const navBarItems = document.querySelectorAll('.nav-bar-item');
+        for (let i = 0; i < navBarItems.length; i++) {
+          navBarItems[i].style.visibility = "visible";
+          navBarItems[i].style.height = "auto";
+          navBarItems[i].style.width = "auto";
+          navBarItems[i].style.marginBottom = "0px";
+        }
+
+        mobileTabsOn = false;
+        
+      } else {
+        const navBar = document.querySelectorAll('.nav-bar');
+        navBar[0].style.display = 'flex';
+        navBar[0].style.flexDirection = 'column';
+        navBar[0].style.justifyContent = 'center';
+        navBar[0].style.alignItems = 'center';
+
+        const navBarItems = document.querySelectorAll('.nav-bar-item');
+        for (let i = 0; i < navBarItems.length; i++) {
+          navBarItems[i].style.visibility = "hidden";
+          navBarItems[i].style.height = "0px";
+          navBarItems[i].style.width = "0px";
+          navBarItems[i].style.marginBottom = "3px";
+        }
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+        window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  function onMobileButtonClick() {
+    if (mobileTabsOn === false) {
+      const navBar = document.querySelectorAll('.nav-bar');
+      console.log('nav bar', navBar);
+      navBar[0].style.display = 'flex';
+      navBar[0].style.flexDirection = 'column';
+      navBar[0].style.justifyContent = 'center';
+      navBar[0].style.alignItems = 'center';
+
+      const navBarItems = document.querySelectorAll('.nav-bar-item');
+      console.log('nav bar items', navBarItems);
+      for (let i = 0; i < navBarItems.length; i++) {
+        console.log('nav bar item', navBarItems[i])
+        navBarItems[i].style.visibility = "visible";
+        navBarItems[i].style.height = "auto";
+        navBarItems[i].style.width = "auto";
+        navBarItems[i].style.marginBottom = "3px";
+      }
+
+      mobileTabsOn = true;
+    } else {
+      const navBarItems = document.querySelectorAll('.nav-bar-item');
+      console.log('nav bar items', navBarItems);
+      for (let i = 0; i < navBarItems.length; i++) {
+        console.log('nav bar item', navBarItems[i])
+        navBarItems[i].style.visibility = "hidden";
+        navBarItems[i].style.height = "0";
+        navBarItems[i].style.width = "0";
+        navBarItems[i].style.marginBottom = "0px";
+      }
+
+      mobileTabsOn = false;
+    }
+  }
+
   return (
     <div>
       <div className="nav-bar-wrap">
         <div className="nav-bar">
-          <div className="nav-bar-mobile-button">
+          <div className="nav-bar-mobile-button" onClick={onMobileButtonClick}>
             <div className="nav-bar-mobile-button-1">
             </div>
             <div className="nav-bar-mobile-button-2">
