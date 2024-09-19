@@ -8,7 +8,7 @@ export default function NavBarItem(
     window.innerWidth
   );
 
-  if (window.innerWidth > 400) {
+  if (window.innerWidth > 600) {
     return (
       <div className="nav-bar-item">
         <a href={navBarLink} className="nav-bar-link">

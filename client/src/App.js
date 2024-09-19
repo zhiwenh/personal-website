@@ -40,7 +40,13 @@ function App() {
           navBarItems[i].style.visibility = "visible";
           navBarItems[i].style.height = "auto";
           navBarItems[i].style.width = "auto";
+          navBarItems[i].style.textAlign = "center";
           navBarItems[i].style.marginBottom = "0px";
+        }
+
+        const navBarLinks = document.querySelectorAll('.nav-bar-link');
+        for (let i = 0; i < navBarLinks.length; i++) {
+          navBarLinks[0].style.textAlign = 'center';
         }
 
         mobileTabsOn = false;
@@ -63,6 +69,7 @@ function App() {
             navBarItems[i].style.visibility = "visible";
             navBarItems[i].style.height = "auto";
             navBarItems[i].style.width = "auto";
+            navBarItems[i].style.textAlign = "center";
             navBarItems[i].style.marginBottom = "3px";
           }
         }
@@ -83,8 +90,8 @@ function App() {
       console.log('nav bar', navBar);
       navBar[0].style.display = 'flex';
       navBar[0].style.flexDirection = 'column';
-      navBar[0].style.justifyContent = 'center';
-      navBar[0].style.alignItems = 'center';
+      navBar[0].style.justifyContent = 'left';
+      navBar[0].style.alignItems = 'left';
 
       const navBarItems = document.querySelectorAll('.nav-bar-item');
 
@@ -94,19 +101,30 @@ function App() {
         navBarItems[i].style.visibility = "visible";
         navBarItems[i].style.height = "auto";
         navBarItems[i].style.width = "auto";
+        navBarItems[i].style.textAlign = "left";
         navBarItems[i].style.marginBottom = "3px";
+      }
+
+      const navBarLinks = document.querySelectorAll('.nav-bar-link-small-window');
+      for (let i = 0; i < navBarLinks.length; i++) {
+        navBarLinks[0].style.textAlign = 'left';
       }
 
       mobileTabsOn = true;
     } else {
       const navBarItems = document.querySelectorAll('.nav-bar-item');
-      console.log('nav bar items', navBarItems);
       for (let i = 0; i < navBarItems.length; i++) {
         console.log('nav bar item', navBarItems[i])
         navBarItems[i].style.visibility = "hidden";
         navBarItems[i].style.height = "0";
         navBarItems[i].style.width = "0";
+        navBarItems[i].style.textAlign = "center";
         navBarItems[i].style.marginBottom = "0px";
+      }
+
+      const navBarLinks = document.querySelectorAll('.nav-bar-link');
+      for (let i = 0; i < navBarLinks.length; i++) {
+        navBarLinks[0].style.textAlign = 'center';
       }
 
       mobileTabsOn = false;

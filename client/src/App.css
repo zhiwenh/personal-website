@@ -39,6 +39,10 @@ a, a:hover, a:visited, a:active {
     display: visible;
     width: 35px;
   }
+
+  .nav-bar-item {
+    text-align: left;
+  }
 }
 
 .nav-bar-mobile-button {
@@ -127,8 +131,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .personal-image {
-  width: 30%;
-  height: 30%;
+  width: 250px;
 }
 
 .short-summary-wrap {
@@ -210,7 +213,7 @@ a, a:hover, a:visited, a:active {
   height: 70%;
   margin-bottom: 10px;
   border: solid;
-  border-color: black;
+  border-color: #808B96;
   border-radius: 15px;
 }
 
@@ -227,7 +230,7 @@ a, a:hover, a:visited, a:active {
   height: 47%;
   margin-bottom: 10px;
   border: solid;
-  border-color: black;
+  border-color: #808B96;
   border-radius: 15px;
 }
 
