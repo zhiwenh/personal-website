@@ -184,6 +184,7 @@ a, a:hover, a:visited, a:active {
   border: solid;
   border-color: #D0D3D4;
   padding: 15px;
+  border-radius: 10px;
   /* width: 800px; */
   /* margin: auto; */
 }
@@ -197,6 +198,7 @@ a, a:hover, a:visited, a:active {
 .project-description {
   margin-bottom: 10px;
   font-size: 20px;
+  text-align: left;
 }
 
 .project-image-wrap {
@@ -207,6 +209,9 @@ a, a:hover, a:visited, a:active {
   width: 70%;
   height: 70%;
   margin-bottom: 10px;
+  border: solid;
+  border-color: black;
+  border-radius: 15px;
 }
 
 .project-link-wrap {
@@ -220,6 +225,10 @@ a, a:hover, a:visited, a:active {
 .project-league-of-legends-cooldown-tracker {
   width: 47%;
   height: 47%;
+  margin-bottom: 10px;
+  border: solid;
+  border-color: black;
+  border-radius: 15px;
 }
 
 .work-experience-wrap {

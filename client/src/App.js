@@ -223,7 +223,7 @@ function App() {
             projectName="League of Legends Cooldown Tracker"
             projectImage={leagueOfLegendsCooldownTracker}
             projectDescription="A cooldown tracker for League of Legends that worked on
-            IOS and Android. Used React Native to work on a mobile devices."
+            IOS and Android. Used React Native to work on mobile devices."
             projectLink="https://github.com/zhiwenh/lolcooldown"
             customizedClassName="project-league-of-legends-cooldown-tracker"
           />
@@ -251,7 +251,7 @@ function App() {
           <WorkExperience
             companyName="Darwins"
             companyDescription="Worked on their applications with focus on decentralized
-            finance. Also did backend and frontend work as well."
+            finance. Also created smart contracts, did backend work, and frontend work."
           />
           <WorkExperience
             companyName="Halo Platform"
@@ -260,7 +260,7 @@ function App() {
           <WorkExperience
             companyName="Florida Biologix"
             companyDescription="Worked in the manufacturing department of the company
-            producing large volumes of product related cell culture."
+            producing large volumes of biologic products."
           />
         </div>
         <div className="blockchain-experience-wrap" id="blockchain-experience-wrap-id">
