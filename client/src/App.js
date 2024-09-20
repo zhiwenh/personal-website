@@ -44,7 +44,6 @@ function App() {
             navBarItems[i].style.width = "auto";
             navBarItems[i].style.textAlign = "center";
             navBarItems[i].style.marginBottom = "0px";
-            navBarItems[i].style.marginRight = "default";
           }
 
           const navBarLinks = document.querySelectorAll('.nav-bar-link');
@@ -81,7 +80,6 @@ function App() {
               navBarItems[i].style.width = "auto";
               navBarItems[i].style.textAlign = "center";
               navBarItems[i].style.marginBottom = "3px";
-              navBarItems[i].style.marginRight = "default";
             }
           }
 
@@ -270,25 +268,54 @@ function App() {
             companyName="Synapse"
             companyDescription="Worked on uploading nodes to be used to connect
             to blockchain networks. Also worked on other blockchain related features."
+            jobAccomplishments={[
+              'Created an Ethereum Geth node on AWS for company financial applications',
+              'Developed an Ethereum custodial wallet for Ethereum, Solana, and Polygon',
+              'Worked on a terraform script for a Polygon node on AWS'
+            ]}
           />
           <WorkExperience
             companyName="Icered"
             companyDescription="Worked on updating their blockchain related features
             in their applications."
+            jobAccomplishments={[
+              'Developed a token that only allows the use of an admin signature to mint tokens',
+              'Created the smart contracts and backend for a NFT exchange that had users sign messages to list their NFTs and that allowed lazy minting',
+              'Researched the creation of a centralized crypto exchange for Bitcoin, Ethereum, and Icered tokens'
+            ]}
           />
           <WorkExperience
             companyName="Darwins"
             companyDescription="Worked on their applications with focus on decentralized
             finance. Also created smart contracts, did backend work, and frontend work."
+            jobAccomplishments={[
+              'Worked on proof reading a decentralized financial application smart contract that invested tokens into people to have them grow over time',
+              'Created an ERC721 smart contract implementation for user rewards with a method to lazy mint the tokens to be redeemed at a later date',
+              'Developed the frontend and backend for the features of minting and transferring ERC721 tokens in a decentralized finance application',
+              'Worked on a way to transition the smart contract system into a layer-2',
+              'Developed a decentralized ERC721 buy sell smart contract, auction smart contract, and offer smart contract and also developed a centralized version of those contracts',
+              'Worked on Angular 2 frontend components and also worked on a backend with Typescript that used Hapi to create API routes for the frontend to call',
+              'Created a generative NFT smart contract using the ERC721 implementation that has 7000 unique NFT images'
+            ]}
           />
           <WorkExperience
             companyName="Halo Platform"
             companyDescription="Worked on a decentralized trading platform."
+            jobAccomplishments={[
+              'Helped with a cryptocurrency exchange using Node.js that traded Bitcoin, Ethereum, and Halo',
+              'Created unit and integration tests using Mocha Chai for all the methods and functions in a cryptocurrency exchange',
+              'Performed application updates with an Agile and Scrum methodology for fast software iterations'
+            ]}
           />
           <WorkExperience
             companyName="Florida Biologix"
             companyDescription="Worked in the manufacturing department of the company
             producing large volumes of biologic products."
+            jobAccomplishments={[
+              'Involved in the upstream manufacturing of viral vectors for use in clinical trials using up to 400L of suspension cells in the cleanrooms of a cGMP facility',
+              'Organized and implemented  the addition of external air flow meters to the company’s cleanroom bioreactors for process verification in the production runs ',
+              'Wrote and edited standard operating procedures and production batch records for new processes and equipment '
+            ]}
           />
         </div>
         <div className="blockchain-experience-wrap" id="blockchain-experience-wrap-id">
