@@ -29,8 +29,6 @@ function App() {
     const handleResize = () => {
       if (window.innerWidth > 600) {
         if (overWidthAlready === false) {
-          console.log('window size bigger than 600');
-
           const navBar = document.querySelectorAll('.nav-bar');
           navBar[0].style.display = 'flex';
           navBar[0].style.flexDirection = 'row';
@@ -98,7 +96,6 @@ function App() {
   }, []);
 
   function onMobileButtonClick() {
-
     if (mobileTabsOn === false) {
       const navBar = document.querySelectorAll('.nav-bar');
       console.log('nav bar', navBar);
@@ -122,7 +119,6 @@ function App() {
     } else {
       const navBarItems = document.querySelectorAll('.nav-bar-item');
       for (let i = 0; i < navBarItems.length; i++) {
-        console.log('nav bar item', navBarItems[i])
         navBarItems[i].style.visibility = "hidden";
         navBarItems[i].style.height = "0";
         navBarItems[i].style.width = "0";

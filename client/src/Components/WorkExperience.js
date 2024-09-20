@@ -4,18 +4,13 @@ export default function WorkExperience(
   {companyName, companyDescription, jobAccomplishments}
 ) {
 
-  console.log('job accomplishments', jobAccomplishments)
-
   if (jobAccomplishments) {
     jobAccomplishments = jobAccomplishments.map(accomplishment => {
-      console.log('here');
       return (
         <li className="job-accomplishment">{accomplishment}</li>
       )
     });
   }
-  
-  console.log('job accomplishments', jobAccomplishments)
 
   return (
     <div className="work-experience">
