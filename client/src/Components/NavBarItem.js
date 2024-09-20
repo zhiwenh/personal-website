@@ -4,9 +4,6 @@ import { useRef } from "react";
 export default function NavBarItem(
   {navBarLink, navBarLinkText}
 ) {
-  const windowWidith = useRef(
-    window.innerWidth
-  );
 
   if (window.innerWidth > 600) {
     return (

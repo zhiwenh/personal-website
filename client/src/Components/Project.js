@@ -14,7 +14,7 @@ export default function Project(
         </div>
         <div className="project-image-wrap">
           <a href={projectLink}>
-            <img src={projectImage} className={customizedClassName} className="project-image"  />
+            <img src={projectImage} className={customizedClassName} alt="Image" className="project-image"  />
           </a>
         </div>
         <div className="project-link-wrap">
@@ -37,6 +37,7 @@ export default function Project(
         <div className="project-image-wrap">
           <a href={projectLink}>
             <img src={projectImage}
+              alt="image"
               className="project-image"
               className={customizedClassName}
             />
