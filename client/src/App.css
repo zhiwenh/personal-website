@@ -20,6 +20,12 @@ a, a:hover, a:visited, a:active {
     align-items: center;
     flex-direction: row;
   }
+
+  .nav-bar-item {
+    visibility: visible;
+    height: auto;
+    width: auto;
+  }
 }
 
 @media (max-width: 600px) {

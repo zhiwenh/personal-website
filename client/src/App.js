@@ -49,7 +49,9 @@ function App() {
           navBarLinks[0].style.textAlign = 'center';
         }
 
-        mobileTabsOn = false;
+        if (mobileTabsOn === true) {
+          mobileTabsOn = false;
+        }
 
       } else {
         const navBar = document.querySelectorAll('.nav-bar');
@@ -97,17 +99,11 @@ function App() {
 
       for (let i = 0; i < navBarItems.length; i++) {
         console.log('nav bar item', navBarItems[i])
-        $('.nav-bar-item').slideDown();
         navBarItems[i].style.visibility = "visible";
         navBarItems[i].style.height = "auto";
         navBarItems[i].style.width = "auto";
         navBarItems[i].style.textAlign = "left";
         navBarItems[i].style.marginBottom = "3px";
-      }
-
-      const navBarLinks = document.querySelectorAll('.nav-bar-link-small-window');
-      for (let i = 0; i < navBarLinks.length; i++) {
-        navBarLinks[0].style.textAlign = 'left';
       }
 
       mobileTabsOn = true;
