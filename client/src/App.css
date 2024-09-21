@@ -189,6 +189,11 @@ a, a:hover, a:visited, a:active {
   font-size: 20px;
 }
 
+.cv-link-description {
+  font-size: 20px;
+  text-align: center;
+}
+
 .project-wrap {
   margin-bottom: 60px;
 }

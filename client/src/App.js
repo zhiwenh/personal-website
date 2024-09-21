@@ -14,6 +14,7 @@ import destoreImage from './destore.png'
 import devchainImage from './devchain.png'
 import leagueOfLegendsCooldownTracker from './league-of-legends-cooldown-tracker.png'
 import googleMusicVisualizer from './google-music-visualizer.png'
+import zhiwenHuangCV from './zhiwen-huang-cv.pdf'
 
 function App() {
   const [windowSize, setWindowSize] = useState({
@@ -221,11 +222,14 @@ function App() {
             CV
           </div>
           <a
-            href='/zhiwen-huang-cv'
+            href={zhiwenHuangCV}
             className="cv-link"
             target="_blank">
               Zhiwen Huang's CV
           </a>
+          <div className="cv-link-description">
+            Opens in new tab
+          </div>
         </div>
         <div className="projects-wrap">
           <div className="project-list-header" id="projects-id">
