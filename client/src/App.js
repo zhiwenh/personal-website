@@ -159,7 +159,7 @@ function App() {
           />
           <NavBarItem
             navBarLink="#projects-id"
-            navBarLinkText="Project List"
+            navBarLinkText="Projects"
           />
           <NavBarItem
             navBarLink="#work-experience-id"
@@ -232,8 +232,8 @@ function App() {
           </div>
         </div>
         <div className="projects-wrap">
-          <div className="project-list-header" id="projects-id">
-            Project List
+          <div className="projects-header" id="projects-id">
+            Projects
           </div>
           <Project
             projectName="Destore"
