@@ -24,11 +24,12 @@ function App() {
 
   let mobileTabsOn = false;
   let overWidthAlready = false;
+  let widthInit = true;
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 600) {
-        if (overWidthAlready === false) {
+        if (overWidthAlready === false || widthInit === true) {
           const navBar = document.querySelectorAll('.nav-bar');
           navBar[0].style.display = 'flex';
           navBar[0].style.flexDirection = 'row';
@@ -55,9 +56,13 @@ function App() {
           if (overWidthAlready === false) {
             overWidthAlready = true;
           }
+
+          if (widthInit === true) {
+            widthInit = false;
+          }
         }
       } else {
-        if (overWidthAlready === true) {
+        if (overWidthAlready === true || widthInit === true) {
           const navBar = document.querySelectorAll('.nav-bar');
           navBar[0].style.display = 'flex';
           navBar[0].style.flexDirection = 'column';
@@ -81,6 +86,10 @@ function App() {
 
           if (overWidthAlready === true) {
             overWidthAlready = false;
+          }
+
+          if (widthInit === true) {
+            widthInit = false;
           }
         }
       }
@@ -106,7 +115,7 @@ function App() {
       for (let i = 0; i < navBarItems.length; i++) {
         navBarItems[i].style.visibility = "visible";
         navBarItems[i].style.height = "auto";
-        navBarItems[i].style.width = "auto";
+        navBarItems[i].style.width = "200px";
         navBarItems[i].style.marginBottom = "3px";
       }
 

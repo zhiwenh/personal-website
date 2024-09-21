@@ -20,6 +20,8 @@ a, a:hover, a:visited, a:active {
     visibility: visible;
     height: auto;
     width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -32,6 +34,8 @@ a, a:hover, a:visited, a:active {
     visibility: hidden;
     height: 0px;
     width: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .nav-bar-mobile-button {
@@ -85,9 +89,10 @@ a, a:hover, a:visited, a:active {
 }
 
 .nav-bar-item {
+  margin-left: 10px;
+  margin-right: 10px;
   color: #85929E;
   text-align: center;
-  width: 200px;
 }
 
 .nav-bar-item a {
