@@ -276,7 +276,17 @@ a, a:hover, a:visited, a:active {
   margin-bottom: 10px;
 }
 
+/* .work-experience-company-name-and-position-wrap {
+  display: flex;
+  flex-direction: row;
+} */
+
 .work-experience-company-name {
+  font-size: 20px;
+  text-align: left;
+}
+
+.work-experience-position {
   font-size: 20px;
   text-align: left;
 }

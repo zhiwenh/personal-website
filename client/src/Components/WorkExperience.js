@@ -1,7 +1,7 @@
 import './../App.css';
 
 export default function WorkExperience(
-  {companyName, companyDescription, jobAccomplishments}
+  {companyNameAndPosition, position, companyDescription, jobAccomplishments}
 ) {
 
   if (jobAccomplishments) {
@@ -15,7 +15,7 @@ export default function WorkExperience(
   return (
     <div className="work-experience">
       <div className="work-experience-company-name">
-        {companyName}
+        {companyNameAndPosition}
       </div>
       <div className="work-experience-company-description">
         {companyDescription}
@@ -26,3 +26,10 @@ export default function WorkExperience(
     </div>
   )
 }
+
+// <div className="work-experience-company-name-and-position-wrap">
+// </div>
+
+// <div className="work-experience-position">
+//   {position}
+// </div>

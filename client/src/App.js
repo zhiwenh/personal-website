@@ -228,7 +228,7 @@ function App() {
               Zhiwen Huang's CV
           </a>
           <div className="cv-link-description">
-            Opens in new tab or window
+            Opens in new tab, window, or download
           </div>
         </div>
         <div className="projects-wrap">
@@ -277,7 +277,7 @@ function App() {
             Work Experience
           </div>
           <WorkExperience
-            companyName="Synapse"
+            companyNameAndPosition="Synapse | Software Engineer III"
             companyDescription="Worked on uploading nodes to be used to connect
             to blockchain networks. Also worked on other blockchain related features."
             jobAccomplishments={[
@@ -287,7 +287,7 @@ function App() {
             ]}
           />
           <WorkExperience
-            companyName="Icered"
+            companyNameAndPosition="Icered | Blockchain Engineer"
             companyDescription="Worked on updating their blockchain related features
             in their applications."
             jobAccomplishments={[
@@ -297,7 +297,7 @@ function App() {
             ]}
           />
           <WorkExperience
-            companyName="Darwins"
+            companyNameAndPosition="Darwins | Blockchain Engineer"
             companyDescription="Worked on their applications with focus on decentralized
             finance. Also created smart contracts, did backend work, and frontend work."
             jobAccomplishments={[
@@ -311,7 +311,7 @@ function App() {
             ]}
           />
           <WorkExperience
-            companyName="Halo Platform"
+            companyNameAndPosition="Halo Platform | Back-end Developer"
             companyDescription="Worked on a decentralized trading platform."
             jobAccomplishments={[
               'Helped with a cryptocurrency exchange using Node.js that traded Bitcoin, Ethereum, and Halo',
@@ -320,7 +320,7 @@ function App() {
             ]}
           />
           <WorkExperience
-            companyName="Florida Biologix"
+            companyNameAndPosition="Florida Biologix | Lab Technician"
             companyDescription="Worked in the manufacturing department of the company
             producing large volumes of biologic products."
             jobAccomplishments={[
