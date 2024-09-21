@@ -74,7 +74,7 @@ function App() {
             if (mobileTabsOn === false) {
               navBarItems[i].style.visibility = "hidden";
               navBarItems[i].style.height = "0px";
-              navBarItems[i].style.width = "200px";
+              navBarItems[i].style.width = "0px";
               navBarItems[i].style.marginBottom = "0px";
             } else {
               navBarItems[i].style.visibility = "visible";
