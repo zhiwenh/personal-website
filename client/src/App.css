@@ -174,6 +174,21 @@ a, a:hover, a:visited, a:active {
   font-size: 20px;
 }
 
+.cv-link-wrap {
+  margin-bottom: 60px;
+}
+
+.cv-link-header {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.cv-link {
+  text-align: center;
+  font-size: 20px;
+}
+
 .project-wrap {
   margin-bottom: 60px;
 }

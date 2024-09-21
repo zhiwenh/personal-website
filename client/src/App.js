@@ -2,7 +2,6 @@ import React, {
     useState,
     useEffect
 } from 'react';
-import $ from "jquery";
 import './App.css';
 import NavBarItem from './Components/NavBarItem.js';
 import Project from './Components/Project.js'
@@ -98,7 +97,6 @@ function App() {
   function onMobileButtonClick() {
     if (mobileTabsOn === false) {
       const navBar = document.querySelectorAll('.nav-bar');
-      console.log('nav bar', navBar);
       navBar[0].style.display = 'flex';
       navBar[0].style.flexDirection = 'column';
       navBar[0].style.justifyContent = 'left';
@@ -107,7 +105,6 @@ function App() {
       const navBarItems = document.querySelectorAll('.nav-bar-item');
 
       for (let i = 0; i < navBarItems.length; i++) {
-        console.log('nav bar item', navBarItems[i])
         navBarItems[i].style.visibility = "visible";
         navBarItems[i].style.height = "auto";
         navBarItems[i].style.width = "auto";
@@ -148,27 +145,31 @@ function App() {
             </div>
           </div>
           <NavBarItem
-            navBarLink="#about-me-wrap-id"
+            navBarLink="#about-me-id"
             navBarLinkText="About me"
           />
           <NavBarItem
-            navBarLink="#links-wrap-id"
+            navBarLink="#links-id"
             navBarLinkText="Links"
           />
           <NavBarItem
-          navBarLink="#projects-wrap-id"
+            navBarLink="#cv-id"
+            navBarLinkText="CV"
+          />
+          <NavBarItem
+          navBarLink="#projects-id"
             navBarLinkText="Project List"
           />
           <NavBarItem
-            navBarLink="#work-experience-wrap-id"
+            navBarLink="#work-experience-id"
             navBarLinkText="Work Experience"
           />
           <NavBarItem
-            navBarLink="#blockchain-experience-wrap-id"
+            navBarLink="#blockchain-experience-id"
             navBarLinkText="Blockchain Experience"
           />
           <NavBarItem
-            navBarLink="#education-wrap-id"
+            navBarLink="#education-id"
             navBarLinkText="Education"
           />
         </div>
@@ -189,7 +190,7 @@ function App() {
         </div>
         <div class="about-me-wrap" id="about-me-wrap-id">
           <div>
-            <h className="about-me-header">
+            <h className="about-me-header" id="about-me-id">
               About me
             </h>
           </div>
@@ -202,8 +203,8 @@ function App() {
             and have developed websites with them.
           </div>
         </div>
-        <div className="links-wrap" id="links-wrap-id">
-          <div className="links-header">
+        <div className="links-wrap">
+          <div className="links-header" id="links-id">
             Links
           </div>
           <div className="links">
@@ -215,8 +216,19 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="projects-wrap" id="projects-wrap-id">
-          <div className="project-list-header">
+        <div className="cv-link-wrap">
+          <div className="cv-link-header" id="cv-id">
+            CV
+          </div>
+          <a
+            href='/zhiwen-huang-cv'
+            className="cv-link"
+            target="_blank">
+              Zhiwen Huang's CV
+          </a>
+        </div>
+        <div className="projects-wrap">
+          <div className="project-list-header" id="projects-id">
             Project List
           </div>
           <Project
@@ -256,8 +268,8 @@ function App() {
             projectLink="https://github.com/zhiwenh/google-music-visualizer"
           />
         </div>
-        <div className="work-experience-wrap" id="work-experience-wrap-id">
-          <div className="work-experience-header">
+        <div className="work-experience-wrap">
+          <div className="work-experience-header" id="work-experience-id">
             Work Experience
           </div>
           <WorkExperience
@@ -314,8 +326,8 @@ function App() {
             ]}
           />
         </div>
-        <div className="blockchain-experience-wrap" id="blockchain-experience-wrap-id">
-          <div className="blockchain-experience-header">
+        <div className="blockchain-experience-wrap">
+          <div className="blockchain-experience-header" id="blockchain-experience-id">
             Blockchain Experience
           </div>
           <div>
@@ -357,8 +369,8 @@ function App() {
             />
           </div>
         </div>
-        <div className="education-wrap" id="education-wrap-id">
-          <div className="education-header">
+        <div className="education-wrap">
+          <div className="education-header" id="education-id">
             Education
           </div>
           <Education
