@@ -287,6 +287,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .job-accomplishments-list {
+  font-size: 20px;
   margin-top: 5px;
   display: flex;
   flex-direction: column;
