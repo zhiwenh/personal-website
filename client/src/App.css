@@ -89,6 +89,7 @@ a, a:hover, a:visited, a:active {
   margin-right: 10px;
   color: #85929E;
   text-align: center;
+  width: 100px;
 }
 
 .nav-bar-item a {
