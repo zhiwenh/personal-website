@@ -28,7 +28,7 @@ export default function Project(
   } else {
     return (
       <div className="project">
-        <div className="project-header">
+        <div className="project-name">
           {projectName}
         </div>
         <div className="project-description">
