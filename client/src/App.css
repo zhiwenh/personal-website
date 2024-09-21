@@ -355,3 +355,17 @@ a, a:hover, a:visited, a:active {
   font-size: 20px;
   text-align: left;
 }
+
+.contact-me-wrap {
+  margin-bottom: 60px;
+}
+
+.contact-me-header {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.contact-me-email {
+  font-size: 20px;
+  text-align: center;
+}

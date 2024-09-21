@@ -173,6 +173,10 @@ function App() {
             navBarLink="#education-id"
             navBarLinkText="Education"
           />
+          <NavBarItem
+            navBarLink="#contact-me-id"
+            navBarLinkText="Contact Me"
+          />
         </div>
       </div>
       <div className="App">
@@ -389,6 +393,14 @@ function App() {
             educationDegree="Bachelor of Science in Mechanical Engineering"
             educationLink="https://www.ufl.edu/"
           />
+        </div>
+        <div className="contact-me-wrap">
+          <div className="contact-me-header" id="contact-me-id">
+            Contact Me
+          </div>
+          <div className="contact-me-email">
+            My email is: zhiwen555@gmail.com
+          </div>
         </div>
       </div>
     </div>
