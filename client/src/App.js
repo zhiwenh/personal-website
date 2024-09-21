@@ -166,10 +166,6 @@ function App() {
             navBarLinkText="Work Experience"
           />
           <NavBarItem
-            navBarLink="#blockchain-experience-id"
-            navBarLinkText="Blockchain Experience"
-          />
-          <NavBarItem
             navBarLink="#education-id"
             navBarLinkText="Education"
           />
@@ -333,49 +329,6 @@ function App() {
               'Wrote and edited standard operating procedures and production batch records for new processes and equipment '
             ]}
           />
-        </div>
-        <div className="blockchain-experience-wrap">
-          <div className="blockchain-experience-header" id="blockchain-experience-id">
-            Blockchain Experience
-          </div>
-          <div>
-            <BlockchainExperience
-              blockchainExperienceListItem="ERC20 tokens"
-              blockchainExperienceItemSummary=
-                "Created ERC20 tokens to be used for companies."
-            />
-            <BlockchainExperience
-              blockchainExperienceListItem="Decentralized finance"
-              blockchainExperienceItemSummary=
-                "Worked on decentralized financial applications for a company
-                that involved staking. Worked on their staking smart contract,
-                frontend, and backend."
-            />
-            <BlockchainExperience
-              blockchainExperienceListItem="NFT marketplaces"
-              blockchainExperienceItemSummary=
-                "Created a NFT marketplace. Created the smart contract and implemented
-                the backend connection with it."
-            />
-            <BlockchainExperience
-              blockchainExperienceListItem="Buy, sell, and auction smart contracts"
-              blockchainExperienceItemSummary=
-                "Created buy, sell, and auction smart contracts for someone."
-            />
-            <BlockchainExperience
-              blockchainExperienceListItem="ERC721 and ERC1155 tokens"
-              blockchainExperienceItemSummary=
-                "Worked on ERC721 tokens and ERC1155 tokens. Created the ability
-                to mint ERC721 in a finanical application. Also worked on a generative
-                artwork ERC721 project. I created the smart contract for it."
-            />
-            <BlockchainExperience
-              blockchainExperienceListItem="Cryptocurrency exchanges"
-              blockchainExperienceItemSummary=
-                "Worked a decentralized crytocurrency exchange and also worked on
-                the architecture of a centralized crytocurrency exchange."
-            />
-          </div>
         </div>
         <div className="education-wrap">
           <div className="education-header" id="education-id">
