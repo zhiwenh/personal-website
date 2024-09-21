@@ -352,7 +352,7 @@ function App() {
             Contact Me
           </div>
           <div className="contact-me-email">
-            My email is: zhiwen555@gmail.com
+            My email is zhiwen555@gmail.com
           </div>
         </div>
       </div>
