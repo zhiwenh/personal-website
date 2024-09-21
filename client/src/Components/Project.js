@@ -6,7 +6,7 @@ export default function Project(
   if (!customizedClassName) {
     return (
       <div className="project">
-        <div className="project-header">
+        <div className="project-name">
           {projectName}
         </div>
         <div className="project-description">
