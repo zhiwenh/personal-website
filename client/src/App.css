@@ -214,6 +214,7 @@ a, a:hover, a:visited, a:active {
   border-color: #D0D3D4;
   padding: 15px;
   border-radius: 10px;
+  overflow-wrap: break-word;
   /* width: 800px; */
   /* margin: auto; */
 }
