@@ -40,7 +40,6 @@ function App() {
             navBarItems[i].style.visibility = "visible";
             navBarItems[i].style.height = "auto";
             navBarItems[i].style.width = "auto";
-            navBarItems[i].style.textAlign = "center";
             navBarItems[i].style.marginBottom = "0px";
           }
 
@@ -76,7 +75,6 @@ function App() {
               navBarItems[i].style.visibility = "visible";
               navBarItems[i].style.height = "auto";
               navBarItems[i].style.width = "auto";
-              navBarItems[i].style.textAlign = "center";
               navBarItems[i].style.marginBottom = "3px";
             }
           }
@@ -100,8 +98,8 @@ function App() {
       const navBar = document.querySelectorAll('.nav-bar');
       navBar[0].style.display = 'flex';
       navBar[0].style.flexDirection = 'column';
-      navBar[0].style.justifyContent = 'left';
-      navBar[0].style.alignItems = 'left';
+      navBar[0].style.justifyContent = 'center';
+      navBar[0].style.alignItems = 'center';
 
       const navBarItems = document.querySelectorAll('.nav-bar-item');
 
@@ -109,7 +107,6 @@ function App() {
         navBarItems[i].style.visibility = "visible";
         navBarItems[i].style.height = "auto";
         navBarItems[i].style.width = "auto";
-        navBarItems[i].style.textAlign = "left";
         navBarItems[i].style.marginBottom = "3px";
       }
 
@@ -120,13 +117,7 @@ function App() {
         navBarItems[i].style.visibility = "hidden";
         navBarItems[i].style.height = "0";
         navBarItems[i].style.width = "0";
-        navBarItems[i].style.textAlign = "center";
         navBarItems[i].style.marginBottom = "0px";
-      }
-
-      const navBarLinks = document.querySelectorAll('.nav-bar-link');
-      for (let i = 0; i < navBarLinks.length; i++) {
-        navBarLinks[0].style.textAlign = 'center';
       }
 
       mobileTabsOn = false;
@@ -158,7 +149,7 @@ function App() {
             navBarLinkText="CV"
           />
           <NavBarItem
-          navBarLink="#projects-id"
+            navBarLink="#projects-id"
             navBarLinkText="Project List"
           />
           <NavBarItem
@@ -228,7 +219,7 @@ function App() {
               Zhiwen Huang's CV
           </a>
           <div className="cv-link-description">
-            Opens in new tab
+            Opens in new tab or window
           </div>
         </div>
         <div className="projects-wrap">
