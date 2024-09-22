@@ -236,15 +236,9 @@ function App() {
             Projects
           </div>
           <Project
-            projectName="Destore"
-            projectImage={destoreImage}
-            projectDescription="A file storage platform built on Ethereum. Used IPFS
-              for the ability to send files to other people."
-            projectLink="https://github.com/zhiwenh/destore"
-          />
-          <Project
             projectName="Delib"
             projectImage={delibImage}
+            projectDate="2016 - 2021"
             projectDescription="A simple Ethereum framework. It allows you to
               compile, build, and deploy smart contracts. It also allows you to easily
               create decentralized applications with the smart contracts you created."
@@ -252,6 +246,7 @@ function App() {
           />
           <Project
             projectName="Devchain"
+            projectDate="2016 - 2018"
             projectImage={devchainImage}
             projectDescription="A private Ethereum blockchain generator. Allows you
               to easily set up testnets to test your blockchain applications on."
@@ -259,6 +254,7 @@ function App() {
           />
           <Project
             projectName="League of Legends Cooldown Tracker"
+            projectDate="2019"
             projectImage={leagueOfLegendsCooldownTracker}
             projectDescription="A cooldown tracker for League of Legends that worked on
             IOS and Android. Used React Native to work on mobile devices."
@@ -267,9 +263,18 @@ function App() {
           />
           <Project
             projectName="Google Music Visualizer"
+            projectDate="2016 - 2019"
             projectImage={googleMusicVisualizer}
             projectDescription="A music visualizer for Google Play Music."
             projectLink="https://github.com/zhiwenh/google-music-visualizer"
+          />
+          <Project
+            projectName="Destore"
+            projectDate="2016"
+            projectImage={destoreImage}
+            projectDescription="A file storage platform built on Ethereum. Used IPFS
+              for the ability to send files to other people."
+            projectLink="https://github.com/zhiwenh/destore"
           />
         </div>
         <div className="work-experience-wrap">

@@ -1,13 +1,16 @@
 import './../App.css';
 
 export default function Project(
-  {projectName, projectDescription, projectLink, projectImage, customizedClassName}
+  {projectName, projectDate, projectDescription, projectLink, projectImage, customizedClassName}
 ) {
   if (!customizedClassName) {
     return (
       <div className="project">
         <div className="project-name">
           {projectName}
+        </div>
+        <div className="project-date">
+          {projectDate}
         </div>
         <div className="project-description">
           {projectDescription}
@@ -30,6 +33,9 @@ export default function Project(
       <div className="project">
         <div className="project-name">
           {projectName}
+        </div>
+        <div className="project-date">
+          {projectDate}
         </div>
         <div className="project-description">
           {projectDescription}
