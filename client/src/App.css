@@ -247,7 +247,7 @@ a, a:hover, a:visited, a:active {
   margin-bottom: 10px;
   border: solid;
   border-color: #808B96;
-  border-radius: 10px;
+  /* border-radius: 5px; */
 }
 
 .project-link-wrap {
@@ -264,7 +264,7 @@ a, a:hover, a:visited, a:active {
   margin-bottom: 10px;
   border: solid;
   border-color: #808B96;
-  border-radius: 15px;
+  /* border-radius: 5px; */
 }
 
 .work-experience-wrap {
