@@ -1,13 +1,18 @@
 import './../App.css';
 
 export default function Education(
-  {educationName, educationDegree, educationDescription, educationLink}
+  {educationName, educationDate, educationDegree, educationDescription, educationLink}
 ) {
   if (!educationDescription) {
     return (
       <div className="education">
-        <div className="education-name">
-          {educationName}
+        <div className="education-name-and-date-wrap">
+          <div className="education-name">
+            {educationName}
+          </div>
+          <div className="education-date">
+            {educationDate}
+          </div>
         </div>
         <div className="education-degree">
           {educationDegree}
@@ -22,8 +27,13 @@ export default function Education(
   } else {
     return (
       <div className="education">
-        <div className="education-name">
-          {educationName}
+        <div className="education-name-and-date-wrap">
+          <div className="education-name">
+            {educationName}
+          </div>
+          <div className="education-date">
+            {educationDate}
+          </div>
         </div>
         <div className="education-degree">
           {educationDegree}

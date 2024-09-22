@@ -341,6 +341,7 @@ function App() {
           </div>
           <Education
             educationName="Codesmith"
+            educationDate="September 2016"
             educationDegree="Software Engineering Immersive Program"
             educationDescription="Codesmith teaches you software engineering
             and full stack Javascript development."
@@ -348,6 +349,7 @@ function App() {
           />
           <Education
             educationName="University of Florida"
+            educationDate="December 2014"
             educationDegree="Bachelor of Science in Mechanical Engineering"
             educationLink="https://www.ufl.edu/"
           />
