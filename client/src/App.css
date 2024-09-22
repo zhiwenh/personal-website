@@ -281,6 +281,11 @@ a, a:hover, a:visited, a:active {
   flex-direction: row;
 } */
 
+.work-experience-company-name-and-dates-worked-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
 .work-experience-company-name {
   font-size: 20px;
   text-align: left;
@@ -289,6 +294,14 @@ a, a:hover, a:visited, a:active {
 .work-experience-position {
   font-size: 20px;
   text-align: left;
+}
+
+.work-experience-dates-worked {
+  margin-left: auto;
+  margin-right: 0;
+  font-size: 20px;
+  text-align: right;
+  font-style: italic;
 }
 
 .work-experience-company-description {

@@ -278,6 +278,7 @@ function App() {
           </div>
           <WorkExperience
             companyNameAndPosition="Synapse | Software Engineer III"
+            datesWorked="Mar 2022 - Jun 2022"
             companyDescription="Worked on uploading nodes to be used to connect
             to blockchain networks. Also worked on other blockchain related features."
             jobAccomplishments={[
@@ -288,6 +289,7 @@ function App() {
           />
           <WorkExperience
             companyNameAndPosition="Icered | Blockchain Engineer"
+            datesWorked="Nov 2021 - Jan 2022"
             companyDescription="Worked on updating their blockchain related features
             in their applications."
             jobAccomplishments={[
@@ -298,6 +300,7 @@ function App() {
           />
           <WorkExperience
             companyNameAndPosition="Darwins | Blockchain Engineer"
+            datesWorked="Jun 2021 - Nov 2021"
             companyDescription="Worked on their applications with focus on decentralized
             finance. Also created smart contracts, did backend work, and frontend work."
             jobAccomplishments={[
@@ -312,6 +315,7 @@ function App() {
           />
           <WorkExperience
             companyNameAndPosition="Halo Platform | Back-end Developer"
+            datesWorked="May 2018 - Aug 2018"
             companyDescription="Worked on a decentralized trading platform."
             jobAccomplishments={[
               'Helped with a cryptocurrency exchange using Node.js that traded Bitcoin, Ethereum, and Halo',
@@ -321,6 +325,7 @@ function App() {
           />
           <WorkExperience
             companyNameAndPosition="Florida Biologix | Lab Technician"
+            datesWorked="March 2015 – August 2015"
             companyDescription="Worked in the manufacturing department of the company
             producing large volumes of biologic products."
             jobAccomplishments={[
