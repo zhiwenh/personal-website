@@ -17,86 +17,79 @@ import googleMusicVisualizer from './google-music-visualizer.png'
 import zhiwenHuangCV from './zhiwen-huang-cv.pdf'
 
 function App() {
-  const [windowSize, setWindowSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight
-  });
-
   let mobileTabsOn = false;
   let overWidthAlready = false;
   let widthInit = true;
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 600) {
-        if (overWidthAlready === false || widthInit === true) {
-          const navBar = document.querySelectorAll('.nav-bar');
-          navBar[0].style.display = 'flex';
-          navBar[0].style.flexDirection = 'row';
-          navBar[0].style.justifyContent = 'center';
-          navBar[0].style.alignItems = 'center';
+  function handleResize() {
+    if (window.innerWidth > 600) {
+      if (overWidthAlready === false || widthInit === true) {
+        const navBar = document.querySelectorAll('.nav-bar');
+        navBar[0].style.display = 'flex';
+        navBar[0].style.flexDirection = 'row';
+        navBar[0].style.justifyContent = 'center';
+        navBar[0].style.alignItems = 'center';
 
-          const navBarItems = document.querySelectorAll('.nav-bar-item');
-          for (let i = 0; i < navBarItems.length; i++) {
+        const navBarItems = document.querySelectorAll('.nav-bar-item');
+        for (let i = 0; i < navBarItems.length; i++) {
+          navBarItems[i].style.visibility = "visible";
+          navBarItems[i].style.height = "auto";
+          navBarItems[i].style.width = "auto";
+          navBarItems[i].style.marginBottom = "0px";
+        }
+
+        const navBarLinks = document.querySelectorAll('.nav-bar-link');
+        for (let i = 0; i < navBarLinks.length; i++) {
+          navBarLinks[0].style.textAlign = 'center';
+        }
+
+        if (mobileTabsOn === true) {
+          mobileTabsOn = false;
+        }
+
+        if (overWidthAlready === false) {
+          overWidthAlready = true;
+        }
+
+        if (widthInit === true) {
+          widthInit = false;
+        }
+      }
+    } else {
+      if (overWidthAlready === true || widthInit === true) {
+        const navBar = document.querySelectorAll('.nav-bar');
+        navBar[0].style.display = 'flex';
+        navBar[0].style.flexDirection = 'column';
+        navBar[0].style.justifyContent = 'center';
+        navBar[0].style.alignItems = 'center';
+
+        const navBarItems = document.querySelectorAll('.nav-bar-item');
+        for (let i = 0; i < navBarItems.length; i++) {
+          if (mobileTabsOn === false) {
+            navBarItems[i].style.visibility = "hidden";
+            navBarItems[i].style.height = "0px";
+            navBarItems[i].style.width = "0px";
+            navBarItems[i].style.marginBottom = "0px";
+          } else {
             navBarItems[i].style.visibility = "visible";
             navBarItems[i].style.height = "auto";
             navBarItems[i].style.width = "auto";
-            navBarItems[i].style.marginBottom = "0px";
-          }
-
-          const navBarLinks = document.querySelectorAll('.nav-bar-link');
-          for (let i = 0; i < navBarLinks.length; i++) {
-            navBarLinks[0].style.textAlign = 'center';
-          }
-
-          if (mobileTabsOn === true) {
-            mobileTabsOn = false;
-          }
-
-          if (overWidthAlready === false) {
-            overWidthAlready = true;
-          }
-
-          if (widthInit === true) {
-            widthInit = false;
+            navBarItems[i].style.marginBottom = "3px";
           }
         }
-      } else {
-        if (overWidthAlready === true || widthInit === true) {
-          const navBar = document.querySelectorAll('.nav-bar');
-          navBar[0].style.display = 'flex';
-          navBar[0].style.flexDirection = 'column';
-          navBar[0].style.justifyContent = 'center';
-          navBar[0].style.alignItems = 'center';
 
-          const navBarItems = document.querySelectorAll('.nav-bar-item');
-          for (let i = 0; i < navBarItems.length; i++) {
-            if (mobileTabsOn === false) {
-              navBarItems[i].style.visibility = "hidden";
-              navBarItems[i].style.height = "0px";
-              navBarItems[i].style.width = "0px";
-              navBarItems[i].style.marginBottom = "0px";
-            } else {
-              navBarItems[i].style.visibility = "visible";
-              navBarItems[i].style.height = "auto";
-              navBarItems[i].style.width = "auto";
-              navBarItems[i].style.marginBottom = "3px";
-            }
-          }
+        if (overWidthAlready === true) {
+          overWidthAlready = false;
+        }
 
-          if (overWidthAlready === true) {
-            overWidthAlready = false;
-          }
-
-          if (widthInit === true) {
-            widthInit = false;
-          }
+        if (widthInit === true) {
+          widthInit = false;
         }
       }
-    };
+    }
+  };
 
-    window.addEventListener('resize', handleResize);
-  });
+  window.addEventListener('resize', handleResize);
 
   function onMobileButtonClick() {
     if (mobileTabsOn === false) {
