@@ -96,11 +96,7 @@ function App() {
     };
 
     window.addEventListener('resize', handleResize);
-
-    return () => {
-        window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  });
 
   function onMobileButtonClick() {
     if (mobileTabsOn === false) {
