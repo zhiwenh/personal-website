@@ -330,7 +330,7 @@ function App() {
           />
           <WorkExperience
             companyNameAndPosition="Florida Biologix | Lab Technician"
-            datesWorked="March 2015 – August 2015"
+            datesWorked="Mar 2015 – Aug 2015"
             companyDescription="Worked in the manufacturing department of the company
             producing large volumes of biologic products."
             jobAccomplishments={[
@@ -346,7 +346,7 @@ function App() {
           </div>
           <Education
             educationName="Codesmith"
-            educationDate="September 2016"
+            educationDate="Sep 2016"
             educationDegree="Software Engineering Immersive Program"
             educationDescription="Codesmith teaches you software engineering
             and full stack Javascript development."
@@ -354,7 +354,7 @@ function App() {
           />
           <Education
             educationName="University of Florida"
-            educationDate="December 2014"
+            educationDate="Dec 2014"
             educationDegree="Bachelor of Science in Mechanical Engineering"
             educationLink="https://www.ufl.edu/"
           />
