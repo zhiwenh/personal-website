@@ -217,7 +217,7 @@ function App() {
               Zhiwen Huang's CV
           </a>
           <div className="cv-link-description">
-            Opens in new tab, window, or download
+            (Opens in new tab, window, or download)
           </div>
         </div>
         <div className="projects-wrap">
