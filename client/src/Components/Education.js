@@ -18,7 +18,7 @@ export default function Education(
           {educationDegree}
         </div>
         <div className="education-link">
-          <a href={educationLink}>
+          <a href={educationLink} target="_blank">
             {educationLink}
           </a>
         </div>
@@ -42,7 +42,7 @@ export default function Education(
           {educationDescription}
         </div>
         <div className="education-link">
-          <a href={educationLink}>
+          <a href={educationLink} target="_blank">
             {educationLink}
           </a>
         </div>

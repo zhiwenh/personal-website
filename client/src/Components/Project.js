@@ -16,13 +16,13 @@ export default function Project(
           {projectDescription}
         </div>
         <div className="project-image-wrap">
-          <a href={projectLink}>
+          <a href={projectLink} target="_blank">
             <img src={projectImage} className={customizedClassName} alt="Image" className="project-image"  />
           </a>
         </div>
         <div className="project-link-wrap">
           Project link: &nbsp;
-          <a href={projectLink} className="project-link">
+          <a href={projectLink} className="project-link" target="_blank">
             {projectLink}
           </a>
         </div>
@@ -41,7 +41,7 @@ export default function Project(
           {projectDescription}
         </div>
         <div className="project-image-wrap">
-          <a href={projectLink}>
+          <a href={projectLink} target="_blank">
             <img src={projectImage}
               alt="image"
               className="project-image"
@@ -51,7 +51,7 @@ export default function Project(
         </div>
         <div className="project-link-wrap">
           Project link: &nbsp;
-          <a href={projectLink} className="project-link">
+          <a href={projectLink} className="project-link" target="_blank">
             {projectLink}
           </a>
         </div>
