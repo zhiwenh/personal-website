@@ -199,13 +199,13 @@ function App() {
           </div>
           <div className="links">
             <div>
-              Linkedin link:
+              Linkedin link:&nbsp;
                 <a href="https://linkedin.com/in/zhiwenhuang0" target="_blank">
                   https://linkedin.com/in/zhiwenhuang0
                 </a>
             </div>
             <div>
-              Github link:
+              Github link:&nbsp;
                 <a href="https://github.com/zhiwenh" target="_blank">
                   https://github.com/zhiwenh
                 </a>
