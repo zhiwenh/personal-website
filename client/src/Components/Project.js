@@ -20,12 +20,12 @@ export default function Project(
             <img src={projectImage} className={customizedClassName} alt="Image" className="project-image"  />
           </a>
         </div>
-        <div className="project-link-wrap">
+        {projectLink ? <div className="project-link-wrap">
           Project link: &nbsp;
           <a href={projectLink} className="project-link" target="_blank">
             {projectLink}
           </a>
-        </div>
+        </div> : ''}
       </div>
     )
   } else {
@@ -49,12 +49,12 @@ export default function Project(
             />
           </a>
         </div>
-        <div className="project-link-wrap">
+        {projectLink ? <div className="project-link-wrap">
           Project link: &nbsp;
           <a href={projectLink} className="project-link" target="_blank">
             {projectLink}
           </a>
-        </div>
+        </div> : ''}
       </div>
     )
   }
