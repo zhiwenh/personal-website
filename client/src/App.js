@@ -9,6 +9,7 @@ import BlockchainExperience from './Components/BlockchainExperience.js'
 import WorkExperience from './Components/WorkExperience.js'
 import Education from './Components/Education.js'
 import personalImage from './personal-image.png'
+import dexImage from './dex.png'
 import delibImage from './delib.png'
 import destoreImage from './destore.png'
 import devchainImage from './devchain.png'
@@ -237,6 +238,14 @@ function App() {
           <div className="projects-header" id="projects-id">
             Projects
           </div>
+          <Project
+            projectName="Dex"
+            projectImage={dexImage}
+            projectDate="2024"
+            projectDescription="A decentralized exchange for Ethereum ERC-20 tokens. Works off a single
+            smart contract that sits on the Ethereum blockchain. Users can add tokens to trade and trade for tokens.
+            Requires the user to know the smart contract address of their token."
+          />
           <Project
             projectName="Delib"
             projectImage={delibImage}
