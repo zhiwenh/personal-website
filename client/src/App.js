@@ -198,7 +198,8 @@ function App() {
             and helped them with decentralized finance applications, ERC20 tokens,
             NFTs, and more. I have also created Ethereum blockchain projects. They
             can be viewed in the projects list. I also have React and Angular experience
-            and have developed websites with them.
+            and have developed websites with them. At the companies I worked at I
+            also did front-end and back-end work.
           </div>
         </div>
         <div className="links-wrap">
@@ -318,7 +319,7 @@ function App() {
             companyNameAndPosition="Darwins | Blockchain Engineer"
             datesWorked="Jun 2021 - Nov 2021"
             companyDescription="Worked on their applications with focus on decentralized
-            finance. Also created smart contracts, did backend work, and frontend work."
+            finance. Also created smart contracts, did front-end work, and did back-end work."
             jobAccomplishments={[
               'Worked on proof reading a decentralized financial application smart contract that invested tokens into people to have them grow over time',
               'Created an ERC721 smart contract implementation for user rewards with a method to lazy mint the tokens to be redeemed at a later date',
