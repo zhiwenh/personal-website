@@ -245,7 +245,7 @@ function App() {
             projectDate="2024"
             projectDescription="A decentralized exchange for Ethereum ERC-20 tokens. Works off a single
             smart contract that sits on the Ethereum blockchain. Users can add tokens to trade and trade for tokens.
-            Requires the user to know the smart contract address of their token."
+            Requires the user to know the smart contract address of their token. Used React for the front-end."
           />
           <Project
             projectName="Delib"
