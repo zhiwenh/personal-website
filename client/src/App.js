@@ -99,6 +99,8 @@ function App() {
   }, []);
 
 
+  // minor change
+  
   function onMobileButtonClick() {
     if (mobileTabsOn === false) {
       const navBar = document.querySelectorAll('.nav-bar');
