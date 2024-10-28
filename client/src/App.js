@@ -100,7 +100,7 @@ function App() {
 
 
   // minor change
-  
+
   function onMobileButtonClick() {
     if (mobileTabsOn === false) {
       const navBar = document.querySelectorAll('.nav-bar');
@@ -301,10 +301,10 @@ function App() {
             companyDescription="Worked on uploading nodes to be used to connect
             to blockchain networks. Also worked on other blockchain related features."
             jobAccomplishments={[
-              'Created Ethereum nodes on AWS for company financial applications that allowed users to connect to Ethereum to make transactions',
-              'Developed an Ethereum custodial wallet for Ethereum, Solana, and Polygon that allowed users to make trades on those platforms',
-              'Worked on a terraform script for a Polygon node on AWS',
-              'Implemented diagrams to list the trade functionality of an Ethereum application that allowed financial applications of Ethereum'
+              'Created Ethereum nodes on AWS for company financial applications that allowed users to connect to Ethereum to make transactions.',
+              'Developed an Ethereum custodial wallet for Ethereum, Solana, and Polygon that allowed users to make trades on those platforms.',
+              'Worked on a terraform script for a Polygon node on AWS.',
+              'Implemented diagrams to list the trade functionality of an Ethereum application that allowed financial applications of Ethereum.'
             ]}
           />
           <WorkExperience
@@ -313,10 +313,10 @@ function App() {
             companyDescription="Worked on updating their blockchain related features
             in their applications."
             jobAccomplishments={[
-              'Developed an ERC20 token that only allows the use of an admin signature to mint tokens to allow tokens to be minted cheaply when certain requirements were met on the mobile application',
-              'Created the smart contracts and backend for a NFT exchange that had users sign messages to list their NFTs and that allowed lazy minting',
-              'Researched the creation of a centralized crypto exchange for Bitcoin, Ethereum, Ethereum ERC20 tokens, and Icered tokens and wrote an article about it that explained the necessary steps to create it',
-              'Used Docker to setup the environment to be developed and tested and added to the environment file for the application to be configured better'
+              'Developed an ERC20 token that only allows the use of an admin signature to mint tokens to allow tokens to be minted cheaply when certain requirements were met on the mobile application.',
+              'Created the smart contracts and backend for a NFT exchange that had users sign messages to list their NFTs and that allowed lazy minting.',
+              'Researched the creation of a centralized crypto exchange for Bitcoin, Ethereum, Ethereum ERC20 tokens, and Icered tokens and wrote an article about it that explained the necessary steps to create it.',
+              'Used Docker to setup the environment to be developed and tested and added to the environment file for the application to be configured better.'
             ]}
           />
           <WorkExperience
@@ -325,12 +325,13 @@ function App() {
             companyDescription="Worked on their applications with focus on decentralized
             finance. Also created smart contracts, did front-end work, and did back-end work."
             jobAccomplishments={[
-              'Worked on proof reading a decentralized financial application smart contract that invested tokens into people to have them grow over time',
-              'Worked on a way to transition a layer-1 smart contract system into a layer-2 by implementing ways for the the main smart contract to send batch transactions to the layer-2',
-              'Developed the front-end and back-end for the features of minting and transferring ERC721 tokens in a decentralized finance application',
-              'Developed a decentralized ERC721 buy sell smart contract, auction smart contract, and offer smart contract and also developed a centralized version of those contracts',
-              'Worked on Angular 2 frontend components and also worked on a backend with Typescript that used Hapi to create API routes for the frontend to call',
-              'Created the smart contract for a generative art NFT collection with 7000 unique images with images currently sold on Opensea today. The generative NFT collection is all Cultiez and the website can be viewed at cultiez.com'
+              'Worked on proof reading a decentralized financial application smart contract that invested tokens into people to have them grow over time.',
+              'Worked on a way to transition a layer-1 smart contract system into a layer-2 by implementing ways for the the main smart contract to send batch transactions to the layer-2.',
+              'Developed the front-end and back-end for the features of minting and transferring ERC721 tokens in a decentralized finance application.',
+              'Developed a decentralized ERC721 buy sell smart contract, auction smart contract, and offer smart contract and also developed a centralized version of those contracts.',
+              'Worked on Angular 2 frontend components and also worked on a backend with Typescript that used Hapi to create API routes for the frontend to call.',
+              'Gathered info from the MongoDB database when working on server updates that called the blockchain.',
+              'Created the smart contract for a generative art NFT collection with 7000 unique images with images currently sold on Opensea today. The generative NFT collection is all Cultiez and the website can be viewed at cultiez.com.'
             ]}
           />
           <WorkExperience
@@ -338,11 +339,11 @@ function App() {
             datesWorked="May 2018 - Aug 2018"
             companyDescription="Worked on a decentralized trading platform."
             jobAccomplishments={[
-              'Researched the 0x Protocol to create a decentralized exchange',
-              'Helped with a cryptocurrency exchange using Node.js that traded Bitcoin, Ethereum, and Halo',
-              'Created unit and integration tests using Mocha Chai for all the methods and functions in a cryptocurrency exchange',
-              'Performed application updates with an Agile and Scrum methodology for fast software iterations',
-              'Worked on their blockchain and made small improvements to it and also researched more of how it should operate for it be perform faster'
+              'Researched the 0x Protocol to create a decentralized exchange.',
+              'Helped with a cryptocurrency exchange using Node.js that traded Bitcoin, Ethereum, and Halo.',
+              'Created unit and integration tests using Mocha Chai for all the methods and functions in a cryptocurrency exchange.',
+              'Performed application updates with an Agile and Scrum methodology for fast software iterations.',
+              'Worked on their blockchain and made small improvements to it and also researched more of how it should operate for it be perform faster.'
             ]}
           />
           <WorkExperience
@@ -351,9 +352,9 @@ function App() {
             companyDescription="Worked in the manufacturing department of the company
             producing large volumes of biologic products."
             jobAccomplishments={[
-              'Involved in the upstream manufacturing of viral vectors for use in clinical trials using up to 400L of suspension cells in the cleanrooms of a cGMP facility',
-              'Organized and implemented  the addition of external air flow meters to the company’s cleanroom bioreactors for process verification in the production runs ',
-              'Wrote and edited standard operating procedures and production batch records for new processes and equipment '
+              'Involved in the upstream manufacturing of viral vectors for use in clinical trials using up to 400L of suspension cells in the cleanrooms of a cGMP facility.',
+              'Organized and implemented  the addition of external air flow meters to the company’s cleanroom bioreactors for process verification in the production runs.',
+              'Wrote and edited standard operating procedures and production batch records for new processes and equipment.'
             ]}
           />
         </div>
