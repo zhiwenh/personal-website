@@ -314,7 +314,8 @@ function App() {
             in their applications."
             jobAccomplishments={[
               'Developed an ERC20 token that only allows the use of an admin signature to mint tokens to allow tokens to be minted cheaply when certain requirements were met on the mobile application.',
-              'Created the smart contracts and backend for a NFT exchange that had users sign messages to list their NFTs and that allowed lazy minting.',
+              'Created the Solidity smart contracts using Truffle and backend for a NFT exchange that had users sign messages to list their NFTs, this saves gas costs, and that allowed lazy minting.',
+              'Had the NFT marketplace back-end server interact with the blockchain, had it push data into the MongoDB database, and made the back-end server also save the signed messages into MongoDB that were used to make transactions on the blockchain.',
               'Researched the creation of a centralized crypto exchange for Bitcoin, Ethereum, Ethereum ERC20 tokens, and Icered tokens and wrote an article about it that explained the necessary steps to create it.',
               'Used Docker to setup the environment to be developed and tested and added to the environment file for the application to be configured better.'
             ]}
@@ -343,7 +344,6 @@ function App() {
               'Helped with a cryptocurrency exchange using Node.js that traded Bitcoin, Ethereum, and Halo.',
               'Created unit and integration tests using Mocha Chai for all the methods and functions in a cryptocurrency exchange.',
               'Performed application updates with an Agile and Scrum methodology for fast software iterations.',
-              'Worked on their blockchain and made small improvements to it and also researched more of how it should operate for it be perform faster.'
             ]}
           />
           <WorkExperience
