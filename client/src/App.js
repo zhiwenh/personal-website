@@ -299,9 +299,10 @@ function App() {
             companyDescription="Worked on uploading nodes to be used to connect
             to blockchain networks. Also worked on other blockchain related features."
             jobAccomplishments={[
-              'Created an Ethereum Geth node on AWS for company financial applications',
-              'Developed an Ethereum custodial wallet for Ethereum, Solana, and Polygon',
-              'Worked on a terraform script for a Polygon node on AWS'
+              'Created Ethereum nodes on AWS for company financial applications that allowed users to connect to Ethereum to make transactions',
+              'Developed an Ethereum custodial wallet for Ethereum, Solana, and Polygon that allowed users to make trades on those platforms',
+              'Worked on a terraform script for a Polygon node on AWS',
+              'Implemented diagrams to list the trade functionality of an Ethereum application that allowed financial applications of Ethereum'
             ]}
           />
           <WorkExperience
@@ -310,9 +311,10 @@ function App() {
             companyDescription="Worked on updating their blockchain related features
             in their applications."
             jobAccomplishments={[
-              'Developed a token that only allows the use of an admin signature to mint tokens',
+              'Developed an ERC20 token that only allows the use of an admin signature to mint tokens to allow tokens to be minted cheaply when certain requirements were met on the mobile application',
               'Created the smart contracts and backend for a NFT exchange that had users sign messages to list their NFTs and that allowed lazy minting',
-              'Researched the creation of a centralized crypto exchange for Bitcoin, Ethereum, and Icered tokens'
+              'Researched the creation of a centralized crypto exchange for Bitcoin, Ethereum, Ethereum ERC20 tokens, and Icered tokens and wrote an article about it that explained the necessary steps to create it',
+              'Used Docker to setup the environment to be developed and tested and added to the environment file for the application to be configured better'
             ]}
           />
           <WorkExperience
@@ -322,12 +324,11 @@ function App() {
             finance. Also created smart contracts, did front-end work, and did back-end work."
             jobAccomplishments={[
               'Worked on proof reading a decentralized financial application smart contract that invested tokens into people to have them grow over time',
-              'Created an ERC721 smart contract implementation for user rewards with a method to lazy mint the tokens to be redeemed at a later date',
-              'Developed the frontend and backend for the features of minting and transferring ERC721 tokens in a decentralized finance application',
-              'Worked on a way to transition the smart contract system into a layer-2',
+              'Worked on a way to transition a layer-1 smart contract system into a layer-2 by implementing ways for the the main smart contract to send batch transactions to the layer-2',
+              'Developed the front-end and back-end for the features of minting and transferring ERC721 tokens in a decentralized finance application',
               'Developed a decentralized ERC721 buy sell smart contract, auction smart contract, and offer smart contract and also developed a centralized version of those contracts',
               'Worked on Angular 2 frontend components and also worked on a backend with Typescript that used Hapi to create API routes for the frontend to call',
-              'Created a generative NFT smart contract using the ERC721 implementation that has 7000 unique NFT images'
+              'Created the smart contract for a generative art NFT collection with 7000 unique images with images currently sold on Opensea today. The generative NFT collection is all Cultiez and the website can be viewed at cultiez.com'
             ]}
           />
           <WorkExperience
@@ -335,9 +336,11 @@ function App() {
             datesWorked="May 2018 - Aug 2018"
             companyDescription="Worked on a decentralized trading platform."
             jobAccomplishments={[
+              'Researched the 0x Protocol to create a decentralized exchange',
               'Helped with a cryptocurrency exchange using Node.js that traded Bitcoin, Ethereum, and Halo',
               'Created unit and integration tests using Mocha Chai for all the methods and functions in a cryptocurrency exchange',
-              'Performed application updates with an Agile and Scrum methodology for fast software iterations'
+              'Performed application updates with an Agile and Scrum methodology for fast software iterations',
+              'Worked on their blockchain and made small improvements to it and also researched more of how it should operate for it be perform faster'
             ]}
           />
           <WorkExperience
