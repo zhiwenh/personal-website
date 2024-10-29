@@ -317,7 +317,7 @@ function App() {
               'Created the Solidity smart contracts using Truffle and backend for a NFT exchange that had users sign messages to list their NFTs, this saves gas costs, and that allowed lazy minting.',
               'Had the NFT marketplace back-end server interact with the blockchain, had it push data into the MongoDB database, and made the back-end server also save the signed messages into MongoDB that were used to make transactions on the blockchain.',
               'Researched the creation of a centralized crypto exchange for Bitcoin, Ethereum, Ethereum ERC20 tokens, and Icered tokens and wrote an article about it that explained the necessary steps to create it.',
-              'Used Docker to setup the environment to be developed and tested and added to the environment file for the application to be configured better.'
+              'Used Docker to setup the environment to be developed and tested.'
             ]}
           />
           <WorkExperience
