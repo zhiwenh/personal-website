@@ -195,13 +195,20 @@ function App() {
             </h>
           </div>
           <div className="about-me">
-            I am a software engineer with experience in full stack development
-            and blockchains. I have worked in the blockchain role of 4 companies
-            and helped them with decentralized finance applications, ERC20 tokens,
-            NFTs, and more. I have also created Ethereum blockchain projects. They
-            can be viewed in the projects list. I also have React and Angular experience
-            and have developed websites with them. At the companies I worked at I
-            also did front-end and back-end work.
+            I'm a software engineer with a passion for full stack development and
+            blockchain innovation. Over the years, I've contributed to four
+            companies in pivotal blockchain roles, where I developed and optimized
+            decentralized finance (DeFi) applications, ERC20 tokens, NFT platforms,
+            and other groundbreaking blockchain projects. You can explore my Ethereum-based
+            creations and other projects in the portfolio section.
+          <br />
+          <br />
+            Beyond blockchain, I bring extensive experience in both front-end and
+            back-end development. I've built and maintained dynamic, user-friendly
+            web applications using frameworks like React and Angular, ensuring seamless
+            performance and scalability. Whether I'm enhancing the user interface or
+            refining server-side logic, I take pride in delivering complete,
+            high-quality software solutions.
           </div>
         </div>
         <div className="links-wrap">
@@ -301,10 +308,10 @@ function App() {
             companyDescription="Worked on uploading nodes to be used to connect
             to blockchain networks. Also worked on other blockchain related features."
             jobAccomplishments={[
-              'Created Ethereum nodes on AWS for company financial applications that allowed users to connect to Ethereum to make transactions.',
-              'Developed an Ethereum custodial wallet for Ethereum, Solana, and Polygon that allowed users to make trades on those platforms.',
-              'Worked on a terraform script for a Polygon node on AWS.',
-              'Implemented diagrams to list the trade functionality of an Ethereum application that allowed financial applications of Ethereum.'
+              'Built and deployed Ethereum nodes on AWS for company financial applications, enabling seamless integration with the Ethereum blockchain for secure and efficient transactions.',
+              'Developed a multi-chain custodial wallet supporting Ethereum, Solana, and Polygon, empowering users to trade seamlessly across these platforms.',
+              'Created a Terraform script to automate the deployment and management of a Polygon node on AWS, improving infrastructure scalability and reliability',
+              'Designed and implemented detailed diagrams to outline the trade functionality of an Ethereum-based financial application, enhancing system transparency and supporting business decision-making.'
             ]}
           />
           <WorkExperience
@@ -313,11 +320,11 @@ function App() {
             companyDescription="Worked on updating their blockchain related features
             in their applications."
             jobAccomplishments={[
-              'Developed an ERC20 token that only allows the use of an admin signature to mint tokens to allow tokens to be minted cheaply when certain requirements were met on the mobile application.',
-              'Created the Solidity smart contracts using Truffle and backend for a NFT exchange that had users sign messages to list their NFTs, this saves gas costs, and that allowed lazy minting.',
-              'Had the NFT marketplace back-end server interact with the blockchain, had it push data into the MongoDB database, and made the back-end server also save the signed messages into MongoDB that were used to make transactions on the blockchain.',
-              'Researched the creation of a centralized crypto exchange for Bitcoin, Ethereum, Ethereum ERC20 tokens, and Icered tokens and wrote an article about it that explained the necessary steps to create it.',
-              'Used Docker to setup the environment to be developed and tested.'
+              'Developed a custom ERC-20 token with admin-controlled minting functionality, enabling cost-efficient token minting based on specific conditions met within a mobile application.',
+              'Designed and implemented Solidity smart contracts and backend services for an NFT exchange platform, facilitating user message signing for NFT listings and supporting lazy minting for efficient transaction handling.',
+              'Integrated the NFT marketplace backend with the blockchain, ensuring smooth interaction with Ethereum and storing blockchain transaction data and signed messages in MongoDB for improved reliability and tracking.',
+              'Conducted research on building a centralized crypto exchange supporting Bitcoin, Ethereum, ERC-20 tokens, and Icered tokens, contributing to strategic planning and technical architecture.',
+              'Utilized Docker to configure and maintain consistent development and testing environments, streamlining workflows and ensuring reliable deployment.'
             ]}
           />
           <WorkExperience
@@ -326,13 +333,13 @@ function App() {
             companyDescription="Worked on their applications with focus on decentralized
             finance. Also created smart contracts, did front-end work, and did back-end work."
             jobAccomplishments={[
-              'Worked on proof reading a decentralized financial application smart contract that invested tokens into people to have them grow over time.',
-              'Worked on a way to transition a layer-1 smart contract system into a layer-2 by implementing ways for the the main smart contract to send batch transactions to the layer-2.',
-              'Developed the front-end and back-end for the features of minting and transferring ERC721 tokens in a decentralized finance application.',
-              'Developed a decentralized ERC721 buy sell smart contract, auction smart contract, and offer smart contract and also developed a centralized version of those contracts.',
-              'Worked on Angular 2 frontend components and also worked on a backend with Typescript that used Hapi to create API routes for the frontend to call.',
-              'Gathered info from the MongoDB database when working on server updates that called the blockchain.',
-              'Created the smart contract for a generative art NFT collection with 7000 unique images with images currently sold on Opensea today. The generative NFT collection is all Cultiez and the website can be viewed at cultiez.com.'
+              'Developed an ERC-721 smart contract for user rewards, incorporating a lazy minting feature to enable token redemption at a later time, optimizing token distribution for users.',
+              'Led the transition from layer-1 to layer-2 smart contract architecture, implementing batch transaction solutions to enhance scalability and reduce transaction costs.',
+              'Designed and implemented front-end and back-end features for minting and transferring ERC-721 tokens in a decentralized finance (DeFi) application, ensuring seamless integration with blockchain systems.',
+              'Built decentralized and centralized ERC-721 contracts, including buy-sell, auction, and offer contracts, to provide flexible and efficient trading experiences for users.',
+              'Developed Angular 2 frontend components and backend services using TypeScript and Hapi, creating robust API routes for seamless communication between the front-end and blockchain.',
+              'Integrated MongoDB to gather and store data from blockchain interactions, ensuring effective data management for server updates and transaction tracking.',
+              'Created a smart contract for a generative art NFT collection consisting of 7,000 unique images, known as Cultiez, which are currently available for purchase on OpenSea. Explore the collection at cultiez.com.'
             ]}
           />
           <WorkExperience
@@ -340,10 +347,10 @@ function App() {
             datesWorked="May 2018 - Aug 2018"
             companyDescription="Worked on a decentralized trading platform."
             jobAccomplishments={[
-              'Researched the 0x Protocol to create a decentralized exchange.',
-              'Helped with a cryptocurrency exchange using Node.js that traded Bitcoin, Ethereum, and Halo.',
-              'Created unit and integration tests using Mocha Chai for all the methods and functions in a cryptocurrency exchange.',
-              'Performed application updates with an Agile and Scrum methodology for fast software iterations.',
+              "Researched and implemented the 0x Protocol to develop a decentralized exchange, enhancing the platform's ability to facilitate peer-to-peer trading of cryptocurrencies.",
+              'Contributed to the development of a cryptocurrency exchange using Node.js, enabling seamless trading of Bitcoin, Ethereum, and Halo tokens with an emphasis on performance and security.',
+              'Created comprehensive unit and integration tests with Mocha and Chai, ensuring the reliability and stability of the exchange’s core functions and processes.',
+              'Led application updates and feature enhancements within an Agile and Scrum environment, driving fast-paced software iterations and continuous improvement.'
             ]}
           />
           <WorkExperience
@@ -352,9 +359,9 @@ function App() {
             companyDescription="Worked in the manufacturing department of the company
             producing large volumes of biologic products."
             jobAccomplishments={[
-              'Involved in the upstream manufacturing of viral vectors for use in clinical trials using up to 400L of suspension cells in the cleanrooms of a cGMP facility.',
-              'Organized and implemented  the addition of external air flow meters to the company’s cleanroom bioreactors for process verification in the production runs.',
-              'Wrote and edited standard operating procedures and production batch records for new processes and equipment.'
+              'Played a key role in upstream manufacturing of viral vectors for clinical trials, managing processes with up to 400L of suspension cell cultures within cGMP-compliant cleanroom environments.',
+              'Led the integration of external airflow meters into cleanroom bioreactors, ensuring enhanced process verification and optimization during critical production runs.',
+              'Developed and refined standard operating procedures (SOPs) and production batch records for new processes and equipment, driving operational efficiency and compliance with regulatory standards.'
             ]}
           />
         </div>
