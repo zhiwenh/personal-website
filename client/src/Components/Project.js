@@ -1,8 +1,19 @@
 import './../App.css';
 
 export default function Project(
-  {projectName, projectDate, projectDescription, projectLink, projectImage, customizedClassName}
+  {projectName, projectDate, projectDescription, projectLink, projectImages, customizedClassName}
 ) {
+
+  projectImages = projectImages.map((image, index) => {
+    return (
+      <div key={index}>
+        <a href={projectLink} target="_blank">
+          <img src={image} className={customizedClassName} alt="Image" className="project-image"  />
+        </a>
+      </div>
+    )
+  });
+
   if (!customizedClassName) {
     return (
       <div className="project">
@@ -16,9 +27,7 @@ export default function Project(
           {projectDescription}
         </div>
         <div className="project-image-wrap">
-          <a href={projectLink} target="_blank">
-            <img src={projectImage} className={customizedClassName} alt="Image" className="project-image"  />
-          </a>
+          {projectImages}
         </div>
         {projectLink ? <div className="project-link-wrap">
           Project link: &nbsp;
@@ -41,13 +50,7 @@ export default function Project(
           {projectDescription}
         </div>
         <div className="project-image-wrap">
-          <a href={projectLink} target="_blank">
-            <img src={projectImage}
-              alt="image"
-              className="project-image"
-              className={customizedClassName}
-            />
-          </a>
+          {projectImages}
         </div>
         {projectLink ? <div className="project-link-wrap">
           Project link: &nbsp;

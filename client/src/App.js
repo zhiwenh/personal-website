@@ -10,10 +10,13 @@ import WorkExperience from './Components/WorkExperience.js'
 import Education from './Components/Education.js'
 import personalImage from './personal-image.png'
 import dexImage from './dex.png'
+import dexImage2 from './dex2.png'
 import delibImage from './delib.png'
 import destoreImage from './destore.png'
+import destoreImage2 from './destore2.png';
 import devchainImage from './devchain.png'
 import leagueOfLegendsCooldownTracker from './league-of-legends-cooldown-tracker.png'
+import leagueOfLegendsCooldownTracker2 from './league-of-legends-cooldown-tracker2.png'
 import googleMusicVisualizer from './google-music-visualizer.png'
 import zhiwenHuangCV from './zhiwen-huang-cv.pdf'
 
@@ -250,7 +253,7 @@ function App() {
           </div>
           <Project
             projectName="Dex"
-            projectImage={dexImage}
+            projectImages={[dexImage, dexImage2]}
             projectDate="2024"
             projectDescription="A decentralized exchange for Ethereum ERC-20 tokens. Works off a single
             smart contract that sits on the Ethereum blockchain. Users can add tokens to trade and trade for tokens.
@@ -258,7 +261,7 @@ function App() {
           />
           <Project
             projectName="Delib"
-            projectImage={delibImage}
+            projectImages={[delibImage]}
             projectDate="2016 - 2021"
             projectDescription="A simple Ethereum framework. It allows you to
               compile, build, and deploy smart contracts. It also allows you to easily
@@ -268,7 +271,7 @@ function App() {
           <Project
             projectName="Devchain"
             projectDate="2016 - 2018"
-            projectImage={devchainImage}
+            projectImages={[devchainImage]}
             projectDescription="A private Ethereum blockchain generator. Allows you
               to easily set up testnets to test your blockchain applications on."
             projectLink="https://github.com/zhiwenh/devchain"
@@ -276,7 +279,7 @@ function App() {
           <Project
             projectName="League of Legends Cooldown Tracker"
             projectDate="2019"
-            projectImage={leagueOfLegendsCooldownTracker}
+            projectImages={[leagueOfLegendsCooldownTracker, leagueOfLegendsCooldownTracker2]}
             projectDescription="A cooldown tracker for League of Legends that worked on
             IOS and Android. Used React Native to work on mobile devices."
             projectLink="https://github.com/zhiwenh/lolcooldown"
@@ -285,14 +288,14 @@ function App() {
           <Project
             projectName="Google Music Visualizer"
             projectDate="2016 - 2019"
-            projectImage={googleMusicVisualizer}
+            projectImages={[googleMusicVisualizer]}
             projectDescription="A music visualizer for Google Play Music."
             projectLink="https://github.com/zhiwenh/google-music-visualizer"
           />
           <Project
             projectName="Destore"
             projectDate="2016"
-            projectImage={destoreImage}
+            projectImages={[destoreImage, destoreImage2]}
             projectDescription="A file storage platform built on Ethereum. Used IPFS
               for the ability to send files to other people."
             projectLink="https://github.com/zhiwenh/destore"
