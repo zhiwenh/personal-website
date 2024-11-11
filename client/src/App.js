@@ -202,8 +202,9 @@ function App() {
             blockchain innovation. Over the years, I've contributed to four
             companies in blockchain roles, where I developed and optimized
             decentralized finance (DeFi) applications, ERC20 tokens, NFT platforms,
-            and other groundbreaking blockchain projects. You can explore my Ethereum-based
-            creations and other projects in the portfolio section.
+            and other groundbreaking blockchain projects. I have also developed my own personal
+            blockchain applications and other software applications. You can explore my projects
+            in the projects section.
           <br />
           <br />
             Beyond blockchain, I bring extensive experience in both front-end and
