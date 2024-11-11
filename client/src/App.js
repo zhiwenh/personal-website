@@ -200,7 +200,7 @@ function App() {
           <div className="about-me">
             I'm a software engineer with a passion for full stack development and
             blockchain innovation. Over the years, I've contributed to four
-            companies in pivotal blockchain roles, where I developed and optimized
+            companies in blockchain roles, where I developed and optimized
             decentralized finance (DeFi) applications, ERC20 tokens, NFT platforms,
             and other groundbreaking blockchain projects. You can explore my Ethereum-based
             creations and other projects in the portfolio section.

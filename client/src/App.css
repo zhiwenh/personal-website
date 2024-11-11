@@ -167,6 +167,7 @@ a, a:hover, a:visited, a:active {
   text-align: left;
   margin: auto;
   font-size: 20px;
+
 }
 
 .links-wrap {
@@ -292,7 +293,16 @@ a, a:hover, a:visited, a:active {
 }
 
 .work-experience {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.work-experience:hover {
+  transform: translateY(-10px);
 }
 
 /* .work-experience-company-name-and-position-wrap {
@@ -308,6 +318,7 @@ a, a:hover, a:visited, a:active {
 .work-experience-company-name {
   font-size: 20px;
   text-align: left;
+  font-weight: bold;
 }
 
 .work-experience-position {
