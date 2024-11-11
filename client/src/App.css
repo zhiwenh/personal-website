@@ -98,7 +98,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .nav-bar a:hover {
-  color: #00bcd4; /* Accent color on hover */
+  color: blue; /* Accent color on hover */
 }
 
 .nav-bar-item {
