@@ -47,7 +47,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .nav-bar-wrap {
-  width: 100%
+  width: 100%;
 }
 
 .nav-bar-mobile-button {
@@ -87,8 +87,18 @@ a, a:hover, a:visited, a:active {
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
-  background-color: #D1E1EA;
+  background-color: #D3D3D3; /* Light Gray */
   overflow: hidden;
+}
+
+.nav-bar a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.nav-bar a:hover {
+  color: #00bcd4; /* Accent color on hover */
 }
 
 .nav-bar-item {
@@ -96,14 +106,6 @@ a, a:hover, a:visited, a:active {
   margin-right: 10px;
   color: #85929E;
   text-align: center;
-}
-
-.nav-bar-item a {
-  color: black;
-}
-
-.nav-bar-item a:hover {
-  color: #566573;
 }
 
 .nav-bar-link {

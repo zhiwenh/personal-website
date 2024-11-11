@@ -5,13 +5,24 @@ export default function Project(
 ) {
 
   projectImages = projectImages.map((image, index) => {
-    return (
-      <div key={index}>
-        <a href={projectLink} target="_blank">
-          <img src={image} className={customizedClassName} alt="Image" className="project-image"  />
-        </a>
-      </div>
-    )
+    if (customizedClassName) {
+      return (
+        <div key={index}>
+          <a href={projectLink} target="_blank">
+            <img src={image} className={customizedClassName} alt="Image" />
+          </a>
+        </div>
+      )
+    } else {
+      return (
+        <div key={index}>
+          <a href={projectLink} target="_blank">
+            <img src={image} alt="Image" className="project-image"  />
+          </a>
+        </div>
+      )
+    }
+
   });
 
   if (!customizedClassName) {
