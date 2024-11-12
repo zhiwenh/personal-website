@@ -129,7 +129,7 @@ a, a:hover, a:visited, a:active {
 .name-short-summary-and-about-me-wrap {
   background-color: #AEC6CF;
   padding-top: 30px;
-  margin-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .name-wrap {
@@ -202,7 +202,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .cv-link-wrap {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   width: 90%;
   max-width: 1000px;
   margin-left: auto;
@@ -226,12 +226,12 @@ a, a:hover, a:visited, a:active {
 }
 
 .projects-wrap {
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   background-color: #8D99AE;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 
 .projects-header {
@@ -312,7 +312,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .work-experience-wrap {
-  margin-bottom: 45px;
+  padding-bottom: 30px;
 }
 
 .work-experience-header {
@@ -413,7 +413,7 @@ a, a:hover, a:visited, a:active {
 
 .education-and-contact-me-wrap {
   background-color: #C9ADA7;
-  padding-top: 15px;
+  padding-top: 30px;
 }
 
 .education-wrap {
