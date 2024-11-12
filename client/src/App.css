@@ -179,6 +179,10 @@ a, a:hover, a:visited, a:active {
 .links-wrap {
   margin-top: 30px;
   margin-bottom: 60px;
+  width: 90%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .links-header {
@@ -194,6 +198,10 @@ a, a:hover, a:visited, a:active {
 
 .cv-link-wrap {
   margin-bottom: 60px;
+  width: 90%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cv-link-header {
@@ -214,10 +222,9 @@ a, a:hover, a:visited, a:active {
 
 .project-wrap {
   margin-bottom: 60px;
-  width: 90%;
-  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #AEC6CF;
 }
 
 .projects-header {
@@ -449,6 +456,10 @@ a, a:hover, a:visited, a:active {
 
 .contact-me-wrap {
   margin-bottom: 60px;
+  width: 90%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-me-header {
