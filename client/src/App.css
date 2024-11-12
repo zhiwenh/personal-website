@@ -89,7 +89,7 @@ a, a:hover, a:visited, a:active {
   width: 100%;
   background-color: white;
   overflow: hidden;
-  border-bottom: 1px solid black;
+  border-bottom: 0.5px solid #333;
 }
 
 .nav-bar a {
@@ -99,7 +99,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .nav-bar a:hover {
-  color: blue; /* Accent color on hover */
+  color: #0077CC; /* Accent color on hover */
 }
 
 .nav-bar-item {
