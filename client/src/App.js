@@ -178,41 +178,43 @@ function App() {
         </div>
       </div>
       <div className="App">
-        <div className="name-wrap">
-          <div className="name">
-            Zhiwen Huang
+        <div className="name-short-summary-and-about-me-wrap">
+          <div className="name-wrap">
+            <div className="name">
+              Zhiwen Huang
+            </div>
           </div>
-        </div>
-        <div className="personal-image-wrap">
-          <img className="personal-image" src={personalImage}/>
-        </div>
-        <div className="short-summary-wrap">
-          <div className="short-summary">
-            Software Engineer | Blockchain Engineer
+          <div className="personal-image-wrap">
+            <img className="personal-image" src={personalImage}/>
           </div>
-        </div>
-        <div class="about-me-wrap" id="about-me-wrap-id">
-          <div>
-            <h className="about-me-header" id="about-me-id">
-              About me
-            </h>
+          <div className="short-summary-wrap">
+            <div className="short-summary">
+              Software Engineer | Blockchain Engineer
+            </div>
           </div>
-          <div className="about-me">
-            I'm a software engineer with a passion for full stack development and
-            blockchain innovation. Over the years, I've contributed to four
-            companies in blockchain roles, where I developed and optimized
-            decentralized finance (DeFi) applications, ERC20 tokens, NFT platforms,
-            and other groundbreaking blockchain projects. I have also developed my own personal
-            blockchain applications and other software applications. You can explore my projects
-            in the projects section.
-          <br />
-          <br />
-            Beyond blockchain, I bring extensive experience in both front-end and
-            back-end development. I've built and maintained dynamic, user-friendly
-            web applications using frameworks like React and Angular, ensuring seamless
-            performance and scalability. Whether I'm enhancing the user interface or
-            refining server-side logic, I take pride in delivering complete,
-            high-quality software solutions.
+          <div class="about-me-wrap" id="about-me-wrap-id">
+            <div>
+              <h className="about-me-header" id="about-me-id">
+                About me
+              </h>
+            </div>
+            <div className="about-me">
+              I'm a software engineer with a passion for full stack development and
+              blockchain innovation. Over the years, I've contributed to four
+              companies in blockchain roles, where I developed and optimized
+              decentralized finance (DeFi) applications, ERC20 tokens, NFT platforms,
+              and other groundbreaking blockchain projects. I have also developed my own personal
+              blockchain applications and other software applications. You can explore my projects
+              in the projects section.
+            <br />
+            <br />
+              Beyond blockchain, I bring extensive experience in both front-end and
+              back-end development. I've built and maintained dynamic, user-friendly
+              web applications using frameworks like React and Angular, ensuring seamless
+              performance and scalability. Whether I'm enhancing the user interface or
+              refining server-side logic, I take pride in delivering complete,
+              high-quality software solutions.
+            </div>
           </div>
         </div>
         <div className="links-wrap">
