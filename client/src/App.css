@@ -130,6 +130,7 @@ a, a:hover, a:visited, a:active {
   background-color: #AEC6CF;
   padding-top: 30px;
   padding-bottom: 15px;
+  border-bottom: 0.5px solid #333;
 }
 
 .name-wrap {
@@ -232,6 +233,8 @@ a, a:hover, a:visited, a:active {
   background-color: #8D99AE;
   padding-top: 15px;
   padding-bottom: 30px;
+  border-top: 0.5px solid #333;
+  border-bottom: 0.5px solid #333;
 }
 
 .projects-header {
@@ -313,6 +316,7 @@ a, a:hover, a:visited, a:active {
 
 .work-experience-wrap {
   padding-bottom: 30px;
+  border-bottom: 0.5px solid #333;
 }
 
 .work-experience-header {
