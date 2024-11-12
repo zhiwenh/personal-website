@@ -5,9 +5,9 @@ export default function WorkExperience(
 ) {
 
   if (jobAccomplishments) {
-    jobAccomplishments = jobAccomplishments.map(accomplishment => {
+    jobAccomplishments = jobAccomplishments.map((accomplishment, index) => {
       return (
-        <li className="job-accomplishment">{accomplishment}</li>
+        <li key={index} className="job-accomplishment">{accomplishment}</li>
       )
     });
   }
