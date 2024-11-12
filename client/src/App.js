@@ -371,31 +371,33 @@ function App() {
             ]}
           />
         </div>
-        <div className="education-wrap">
-          <div className="education-header" id="education-id">
-            Education
+        <div className="education-and-contact-me-wrap">
+          <div className="education-wrap">
+            <div className="education-header" id="education-id">
+              Education
+            </div>
+            <Education
+              educationName="Codesmith"
+              educationDate="Sep 2016"
+              educationDegree="Software Engineering Immersive Program"
+              educationDescription="Codesmith teaches you software engineering
+              and full stack Javascript development."
+              educationLink="https://www.codesmith.io/"
+            />
+            <Education
+              educationName="University of Florida"
+              educationDate="Dec 2014"
+              educationDegree="Bachelor of Science in Mechanical Engineering"
+              educationLink="https://www.ufl.edu/"
+            />
           </div>
-          <Education
-            educationName="Codesmith"
-            educationDate="Sep 2016"
-            educationDegree="Software Engineering Immersive Program"
-            educationDescription="Codesmith teaches you software engineering
-            and full stack Javascript development."
-            educationLink="https://www.codesmith.io/"
-          />
-          <Education
-            educationName="University of Florida"
-            educationDate="Dec 2014"
-            educationDegree="Bachelor of Science in Mechanical Engineering"
-            educationLink="https://www.ufl.edu/"
-          />
-        </div>
-        <div className="contact-me-wrap">
-          <div className="contact-me-header" id="contact-me-id">
-            Contact Me
-          </div>
-          <div className="contact-me-email">
-            My email is zhiwen555@gmail.com
+          <div className="contact-me-wrap">
+            <div className="contact-me-header" id="contact-me-id">
+              Contact Me
+            </div>
+            <div className="contact-me-email">
+              My email is zhiwen555@gmail.com
+            </div>
           </div>
         </div>
       </div>

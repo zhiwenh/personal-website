@@ -87,8 +87,9 @@ a, a:hover, a:visited, a:active {
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
-  background-color: #D3D3D3; /* Light Gray */
+  background-color: white;
   overflow: hidden;
+  border-bottom: 1px solid black;
 }
 
 .nav-bar a {
@@ -150,6 +151,10 @@ a, a:hover, a:visited, a:active {
 
 .short-summary-wrap {
   margin-bottom: 60px;
+  width: 90%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .short-summary {
@@ -220,11 +225,13 @@ a, a:hover, a:visited, a:active {
   text-align: center;
 }
 
-.project-wrap {
-  margin-bottom: 60px;
+.projects-wrap {
+  margin-bottom: 45px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #AEC6CF;
+  background-color: #8D99AE;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .projects-header {
@@ -305,7 +312,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .work-experience-wrap {
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
 
 .work-experience-header {
@@ -315,7 +322,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .work-experience {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -404,6 +411,11 @@ a, a:hover, a:visited, a:active {
   font-size: 20px;
 }
 
+.education-and-contact-me-wrap {
+  background-color: #C9ADA7;
+  padding-top: 15px;
+}
+
 .education-wrap {
   margin-bottom: 60px;
   width: 90%;
@@ -455,7 +467,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .contact-me-wrap {
-  margin-bottom: 60px;
+  padding-bottom: 45px;
   width: 90%;
   max-width: 1000px;
   margin-left: auto;
