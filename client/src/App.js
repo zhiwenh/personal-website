@@ -210,10 +210,10 @@ function App() {
             <br />
               Beyond blockchain, I bring extensive experience in both front-end and
               back-end development. I've built and maintained dynamic, user-friendly
-              web applications using frameworks like React and Angular, ensuring seamless
-              performance and scalability. Whether I'm enhancing the user interface or
-              refining server-side logic, I take pride in delivering complete,
-              high-quality software solutions.
+              web applications using frameworks like React and Angular, ensuring
+              seamless performance and scalability (this website is built with React).
+              Whether I'm enhancing the user interface or refining server-side logic,
+              I take pride in delivering complete, high-quality software solutions.
             </div>
           </div>
         </div>
