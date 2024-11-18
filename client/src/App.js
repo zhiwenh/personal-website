@@ -25,6 +25,29 @@ function App() {
   let overWidthAlready = false;
   let widthInit = true;
 
+  const [showNav, setShowNav] = useState(true);
+  let lastScrollY = window.scrollY;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY < lastScrollY) {
+        // Show navbar when scrolling up
+        setShowNav(true);
+      } else {
+        // Hide navbar when scrolling down
+        setShowNav(false);
+      }
+      lastScrollY = window.scrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   useEffect(() => {
     function handleResize() {
       if (window.innerWidth > 600) {
@@ -138,7 +161,7 @@ function App() {
   return (
     <div>
       <div className="nav-bar-wrap">
-        <div className="nav-bar">
+        <div className={`nav-bar ${showNav ? 'show' : 'hide'}`}>
           <div className="nav-bar-mobile-button" onClick={onMobileButtonClick}>
             <div className="nav-bar-mobile-button-1">
             </div>
@@ -251,7 +274,7 @@ function App() {
           </div>
         </div>
         <div className="projects-wrap">
-          <div className="projects-header" id="projects-id">
+          <div className="projects-header">
             Projects
           </div>
           <Project
