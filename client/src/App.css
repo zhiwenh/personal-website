@@ -44,7 +44,7 @@ a, a:hover, a:visited, a:active {
 
   .nav-bar-mobile-button {
     margin-right: auto;
-    margin-left: 30px;
+    margin-left: 35px;
     display: visible;
     width: 35px;
   }
@@ -100,8 +100,6 @@ a, a:hover, a:visited, a:active {
   border-bottom: 0.5px solid #333;
   position: fixed;
   top: 0;
-  width: 100%;
-  padding: 10px 20px;
   transition: transform 0.3s ease-in-out;
   z-index: 1000;
 }
@@ -317,6 +315,8 @@ a, a:hover, a:visited, a:active {
   border: solid;
   border-color: #808B96;
   border-radius: 5px;
+  max-width: 600px;
+  max-height: 600px;
 }
 
 .project-link-wrap {
@@ -328,12 +328,13 @@ a, a:hover, a:visited, a:active {
 }
 
 .project-league-of-legends-cooldown-tracker {
-  width: 47%;
-  height: 47%;
+  width: 40%;
+  height: 40%;
   margin-bottom: 10px;
   border: solid;
   border-color: #808B96;
   border-radius: 5px;
+  max-height: 800px;
 }
 
 .work-experience-wrap {
