@@ -283,10 +283,6 @@ a, a:hover, a:visited, a:active {
   margin-right: auto;
 }
 
-.project:hover {
-  transform: translateY(-10px);
-}
-
 .project-name {
   font-size: 35px;
   font-weight: bold;
@@ -316,7 +312,12 @@ a, a:hover, a:visited, a:active {
   border-color: #808B96;
   border-radius: 5px;
   max-width: 600px;
-  max-height: 600px;
+  max-height: 700px;
+  transition: transform 0.5s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.09); /* Increase the scale for zoom effect */
 }
 
 .project-link-wrap {
@@ -335,6 +336,11 @@ a, a:hover, a:visited, a:active {
   border-color: #808B96;
   border-radius: 5px;
   max-height: 800px;
+  transition: transform 0.5s ease;
+}
+
+.project-league-of-legends-cooldown-tracker:hover {
+  transform: scale(1.09); /* Increase the scale for zoom effect */
 }
 
 .work-experience-wrap {
