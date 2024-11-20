@@ -298,6 +298,7 @@ function App() {
           <div className="projects-header">
             Projects
           </div>
+          <div className="projects-wrap-inner">
           <Project
             projectName="Dex"
             projectImages={[dexImage, dexImage2]}
@@ -348,6 +349,7 @@ function App() {
               for the ability to send files to other people."
             projectLink="https://github.com/zhiwenh/destore"
           />
+        </div>
         </div>
         <div className="work-experience-wrap">
           <div className="work-experience-header" id="work-experience-id">

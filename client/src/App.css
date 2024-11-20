@@ -263,6 +263,11 @@ a, a:hover, a:visited, a:active {
   margin-bottom: 20px;
 }
 
+.projects-wrap-inner {
+  display: flex;
+  flex-direction: column;
+}
+
 .project {
   margin-bottom: 40px;
   /* border: solid; */
@@ -278,7 +283,7 @@ a, a:hover, a:visited, a:active {
   padding: 20px;
   transition: transform 0.3s ease;
   width: 90%;
-  max-width: 1000px;
+  max-width: 650px;
   margin-left: auto;
   margin-right: auto;
 }
