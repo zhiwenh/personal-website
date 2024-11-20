@@ -381,6 +381,7 @@ a, a:hover, a:visited, a:active {
 .work-experience-company-name-and-dates-worked-wrap {
   display: flex;
   flex-direction: row;
+  margin-bottom: 3px;
 }
 
 .work-experience-company-name {

@@ -356,63 +356,36 @@ function App() {
           <WorkExperience
             companyNameAndPosition="Synapse | Software Engineer III"
             datesWorked="Mar 2022 - Jun 2022"
-            companyDescription="Worked on uploading nodes to be used to connect
-            to blockchain networks. Also worked on other blockchain related features."
+            companyDescription="I spearheaded blockchain innovations by deploying Ethereum nodes on AWS to streamline financial applications and enable secure, efficient transactions. I developed a multi-chain custodial wallet supporting Ethereum, Solana, and Polygon, enhancing trading capabilities across platforms. Leveraging Terraform, I automated the deployment of Polygon nodes, boosting infrastructure scalability. Additionally, I designed comprehensive diagrams illustrating the trade functionality of Ethereum-based financial systems, promoting clarity and informed decision-making."
             jobAccomplishments={[
-              'Built and deployed Ethereum nodes on AWS for company financial applications, enabling seamless integration with the Ethereum blockchain for secure and efficient transactions.',
-              'Developed a multi-chain custodial wallet supporting Ethereum, Solana, and Polygon, empowering users to trade seamlessly across these platforms.',
-              'Created a Terraform script to automate the deployment and management of a Polygon node on AWS, improving infrastructure scalability and reliability',
-              'Designed and implemented detailed diagrams to outline the trade functionality of an Ethereum-based financial application, enhancing system transparency and supporting business decision-making.'
             ]}
           />
           <WorkExperience
             companyNameAndPosition="Icered | Blockchain Engineer"
             datesWorked="Nov 2021 - Jan 2022"
-            companyDescription="Worked on updating their blockchain related features
-            in their applications."
+            companyDescription="I enhanced blockchain features by developing a custom ERC-20 token with admin-controlled minting, optimizing cost-efficient token issuance based on mobile app conditions. I designed Solidity smart contracts and backend services for an NFT exchange, enabling message signing for NFT listings and supporting lazy minting. By integrating the backend with Ethereum, I ensured seamless blockchain interaction and utilized MongoDB for reliable storage of transaction data. I also researched and contributed to the architecture of a centralized crypto exchange supporting Bitcoin, Ethereum, ERC-20, and Icered tokens. Leveraging Docker, I streamlined development and testing workflows for consistent deployment."
             jobAccomplishments={[
-              'Developed a custom ERC-20 token with admin-controlled minting functionality, enabling cost-efficient token minting based on specific conditions met within a mobile application.',
-              'Designed and implemented Solidity smart contracts and backend services for an NFT exchange platform, facilitating user message signing for NFT listings and supporting lazy minting for efficient transaction handling.',
-              'Integrated the NFT marketplace backend with the blockchain, ensuring smooth interaction with Ethereum and storing blockchain transaction data and signed messages in MongoDB for improved reliability and tracking.',
-              'Conducted research on building a centralized crypto exchange supporting Bitcoin, Ethereum, ERC-20 tokens, and Icered tokens, contributing to strategic planning and technical architecture.',
-              'Utilized Docker to configure and maintain consistent development and testing environments, streamlining workflows and ensuring reliable deployment.'
             ]}
           />
           <WorkExperience
             companyNameAndPosition="Darwins | Blockchain Engineer"
             datesWorked="Jun 2021 - Nov 2021"
-            companyDescription="Worked on their applications with focus on decentralized
-            finance. Also created smart contracts, did front-end work, and did back-end work."
+            companyDescription="I focused on decentralized finance, contributing to a social staking application and other innovative blockchain projects. I developed an ERC-721 smart contract for user rewards with lazy minting functionality, enabling deferred token redemption to optimize user engagement. I led the migration from layer-1 to layer-2 smart contract architecture, implementing batch transactions to improve scalability and reduce costs. I designed and built front-end and back-end features for ERC-721 minting and transfers, ensuring seamless blockchain integration. Additionally, I created flexible buy-sell, auction, and offer contracts for decentralized and centralized trading. My work included developing Angular 2 components and TypeScript-based backend services using Hapi, with MongoDB for efficient transaction tracking and data management. I also created the smart contract for Cultiez, a generative NFT collection of 7,000 unique images, now available on OpenSea."
             jobAccomplishments={[
-              'Developed an ERC-721 smart contract for user rewards, incorporating a lazy minting feature to enable token redemption at a later time, optimizing token distribution for users.',
-              'Led the transition from layer-1 to layer-2 smart contract architecture, implementing batch transaction solutions to enhance scalability and reduce transaction costs.',
-              'Designed and implemented front-end and back-end features for minting and transferring ERC-721 tokens in a decentralized finance (DeFi) application, ensuring seamless integration with blockchain systems.',
-              'Built decentralized and centralized ERC-721 contracts, including buy-sell, auction, and offer contracts, to provide flexible and efficient trading experiences for users.',
-              'Developed Angular 2 frontend components and backend services using TypeScript and Hapi, creating robust API routes for seamless communication between the front-end and blockchain.',
-              'Integrated MongoDB to gather and store data from blockchain interactions, ensuring effective data management for server updates and transaction tracking.',
-              'Created a smart contract for a generative art NFT collection consisting of 7,000 unique images, known as Cultiez, which are currently available for purchase on OpenSea. Explore the collection at cultiez.com.'
             ]}
           />
           <WorkExperience
             companyNameAndPosition="Halo Platform | Back-end Developer"
             datesWorked="May 2018 - Aug 2018"
-            companyDescription="Worked on a decentralized trading platform."
+            companyDescription="I contributed to the development of a decentralized trading platform by implementing the 0x Protocol to enable peer-to-peer cryptocurrency trading. I also helped build a cryptocurrency exchange using Node.js, facilitating secure and efficient trading of Bitcoin, Ethereum, and Halo tokens. To ensure reliability, I wrote comprehensive unit and integration tests using Mocha and Chai. Additionally, I played a key role in driving application updates and feature enhancements within an Agile and Scrum environment, supporting rapid development cycles and continuous improvement."
             jobAccomplishments={[
-              "Researched and implemented the 0x Protocol to develop a decentralized exchange, enhancing the platform's ability to facilitate peer-to-peer trading of cryptocurrencies.",
-              'Contributed to the development of a cryptocurrency exchange using Node.js, enabling seamless trading of Bitcoin, Ethereum, and Halo tokens with an emphasis on performance and security.',
-              'Created comprehensive unit and integration tests with Mocha and Chai, ensuring the reliability and stability of the exchange’s core functions and processes.',
-              'Led application updates and feature enhancements within an Agile and Scrum environment, driving fast-paced software iterations and continuous improvement.'
             ]}
           />
           <WorkExperience
             companyNameAndPosition="Florida Biologix | Lab Technician"
             datesWorked="Mar 2015 – Aug 2015"
-            companyDescription="Worked in the manufacturing department of the company
-            producing large volumes of biologic products."
+            companyDescription="I worked in the manufacturing department, producing large volumes of biologic products for clinical trials. I contributed to the upstream manufacturing of viral vectors, managing suspension cell cultures of up to 400L in cGMP-compliant cleanroom environments. I led the integration of external airflow meters into bioreactors, enhancing process verification and optimization. Additionally, I developed and refined standard operating procedures (SOPs) and production batch records, improving operational efficiency and ensuring compliance with regulatory standards."
             jobAccomplishments={[
-              'Played a key role in upstream manufacturing of viral vectors for clinical trials, managing processes with up to 400L of suspension cell cultures within cGMP-compliant cleanroom environments.',
-              'Led the integration of external airflow meters into cleanroom bioreactors, ensuring enhanced process verification and optimization during critical production runs.',
-              'Developed and refined standard operating procedures (SOPs) and production batch records for new processes and equipment, driving operational efficiency and compliance with regulatory standards.'
             ]}
           />
         </div>
