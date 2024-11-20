@@ -200,8 +200,8 @@ function App() {
             navBarLinkText="Links"
           />
           <NavBarItem
-            navBarLink="#cv-id"
-            navBarLinkText="CV"
+            navBarLink="#resume-id"
+            navBarLinkText="Resume"
           />
           <NavBarItem
             navBarLink="#projects-id"
@@ -282,13 +282,13 @@ function App() {
         </div>
         <div className="cv-link-wrap">
           <div className="cv-link-header" id="cv-id">
-            CV
+            Resume
           </div>
           <a
             href={zhiwenHuangCV}
             className="cv-link"
             target="_blank">
-              Zhiwen Huang's CV
+              Zhiwen Huang's Resume
           </a>
           <div className="cv-link-description">
             (Opens in new tab, window, or download)
