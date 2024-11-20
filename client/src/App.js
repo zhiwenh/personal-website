@@ -356,7 +356,7 @@ function App() {
           <WorkExperience
             companyNameAndPosition="Synapse | Software Engineer III"
             datesWorked="Mar 2022 - Jun 2022"
-            companyDescription="I spearheaded blockchain innovations by deploying Ethereum nodes on AWS to streamline financial applications and enable secure, efficient transactions. I developed a multi-chain custodial wallet supporting Ethereum, Solana, and Polygon, enhancing trading capabilities across platforms. Leveraging Terraform, I automated the deployment of Polygon nodes, boosting infrastructure scalability. Additionally, I designed comprehensive diagrams illustrating the trade functionality of Ethereum-based financial systems, promoting clarity and informed decision-making."
+            companyDescription="I created blockchain innovations by deploying Ethereum nodes on AWS to streamline financial applications and enable secure, efficient transactions. I developed a multi-chain custodial wallet supporting Ethereum, Solana, and Polygon, enhancing trading capabilities across platforms. Leveraging Terraform, I automated the deployment of Polygon nodes, boosting infrastructure scalability. Additionally, I designed comprehensive diagrams illustrating the trade functionality of Ethereum-based financial systems, promoting clarity and informed decision-making."
             jobAccomplishments={[
             ]}
           />
