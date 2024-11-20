@@ -50,7 +50,7 @@ function App() {
 
   useEffect(() => {
     function handleResize() {
-      if (window.innerWidth > 600) {
+      if (window.innerWidth >= 600) {
         if (overWidthAlready === false || widthInit === true) {
           const navBar = document.querySelectorAll('.nav-bar');
           navBar[0].style.display = 'flex';
@@ -157,6 +157,27 @@ function App() {
       mobileTabsOn = false;
     }
   }
+
+  document.addEventListener('click', (event) => {
+    if (!(event.target.classList[0] === 'nav-bar' ||
+        event.target.classList[0] === 'nav-bar-link' ||
+        event.target.classList[0] === 'nav-bar-mobile-button' ||
+        event.target.classList[0] === 'nav-bar-mobile-button-1' ||
+        event.target.classList[0] === 'nav-bar-mobile-button-2' ||
+        event.target.classList[0] === 'nav-bar-mobile-button-3') &&
+        mobileTabsOn === true
+      ) {
+        const navBarItems = document.querySelectorAll('.nav-bar-item');
+        for (let i = 0; i < navBarItems.length; i++) {
+          navBarItems[i].style.visibility = "hidden";
+          navBarItems[i].style.height = "0";
+          navBarItems[i].style.width = "0";
+          navBarItems[i].style.marginBottom = "0px";
+      }
+
+      mobileTabsOn = false;
+    }
+  });
 
   return (
     <div>
