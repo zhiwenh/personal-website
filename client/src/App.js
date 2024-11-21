@@ -18,7 +18,7 @@ import devchainImage from './devchain.png'
 import leagueOfLegendsCooldownTracker from './league-of-legends-cooldown-tracker.png'
 import leagueOfLegendsCooldownTracker2 from './league-of-legends-cooldown-tracker2.png'
 import googleMusicVisualizer from './google-music-visualizer.png'
-import zhiwenHuangCV from './zhiwen-huang-cv.pdf'
+import zhiwenHuangResume from './zhiwen-huang-resume.pdf'
 
 function App() {
   let mobileTabsOn = false;
@@ -272,7 +272,7 @@ function App() {
             Resume
           </div>
           <a
-            href={zhiwenHuangCV}
+            href={zhiwenHuangResume}
             className="cv-link"
             target="_blank">
               Zhiwen Huang's Resume
