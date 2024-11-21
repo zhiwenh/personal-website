@@ -455,6 +455,7 @@ a, a:hover, a:visited, a:active {
   background-color: #C9ADA7;
   padding-top: 15px;
   padding-bottom: 15px;
+  border-bottom: 0.5px solid #333;
   /* padding-left: 40px;
   padding-right: 40px; */
 }
