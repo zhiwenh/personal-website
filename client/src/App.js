@@ -28,25 +28,8 @@ function App() {
   const [showNav, setShowNav] = useState(true);
   let lastScrollY = window.scrollY;
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY < lastScrollY) {
-        // Show navbar when scrolling up
-        setShowNav(true);
-      } else {
-        // Hide navbar when scrolling down
-        setShowNav(false);
-      }
-      lastScrollY = window.scrollY;
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    // Cleanup the event listener on component unmount
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  const navbar = document.getElementById('nav-bar');
+  const links = document.querySelectorAll('.nav-bar a');
 
   useEffect(() => {
     function handleResize() {
@@ -182,7 +165,7 @@ function App() {
   return (
     <div>
       <div className="nav-bar-wrap">
-        <div className={`nav-bar ${showNav ? 'show' : 'hide'}`}>
+        <div id="nav-bar" className={`nav-bar ${showNav ? 'show' : 'hide'}`}>
           <div className="nav-bar-mobile-button" onClick={onMobileButtonClick}>
             <div className="nav-bar-mobile-button-1">
             </div>
@@ -210,6 +193,10 @@ function App() {
           <NavBarItem
             navBarLink="#work-experience-id"
             navBarLinkText="Work Experience"
+          />
+          <NavBarItem
+            navBarLink="#skills-id"
+            navBarLinkText="Skills"
           />
           <NavBarItem
             navBarLink="#education-id"
@@ -281,7 +268,7 @@ function App() {
           </div>
         </div>
         <div className="cv-link-wrap">
-          <div className="cv-link-header" id="cv-id">
+          <div className="cv-link-header" id="resume-id">
             Resume
           </div>
           <a
@@ -295,7 +282,7 @@ function App() {
           </div>
         </div>
         <div className="projects-wrap">
-          <div className="projects-header">
+          <div className="projects-header" id="projects-id">
             Projects
           </div>
           <div className="projects-wrap-inner">
@@ -304,7 +291,7 @@ function App() {
             projectImages={[dexImage, dexImage2]}
             projectDate="2024"
             projectDescription="A decentralized exchange for Ethereum ERC-20 tokens. Works off a single
-            smart contract that sits on the Ethereum blockchain. Users can add tokens to trade and trade for tokens.
+            smart contract that sits on the Ethereum blockchain. Users can add tokens to trade and trade for other tokens.
             Requires the user to know the smart contract address of their token. Used React for the front-end."
             projectLink="https://github.com/zhiwenh/dex"
           />
@@ -390,6 +377,39 @@ function App() {
             jobAccomplishments={[
             ]}
           />
+        </div>
+        <div className="skills-wrap">
+          <div className="skills">
+            <div className="skills-header" id="skills-id">
+              Skills
+            </div>
+            <div className="skills-list">
+              <div className="skill">
+                <p className="skills-list-section-header">Programming Languages:</p> JavaScript, TypeScript, Python, Ruby, C++, Go
+              </div>
+              <div className="skill">
+                <p className="skills-list-section-header">Frameworks & Libraries:</p>  React, Angular, Angular 2, React Native, Django, Express.js, Node.js, Redux, jQuery, Hapi, Tailwind CSS, Next.js, GraphQL
+              </div>
+              <div className="skill">
+                <p className="skills-list-section-header">Blockchain Technologies:</p>  Ethereum, Solidity, Truffle, Hardhat, web3.js, ethers.js, Wagmi, IPFS, Solana, Polygon, Layer-2 solutions
+              </div>
+              <div className="skill">
+                <p className="skills-list-section-header">Development Tools:</p>  AWS, Docker, Electron, Webpack, Mocha, Chai, Gulp, Jest, Terraform, TDD (Test-Driven Development)
+              </div>
+              <div className="skill">
+                <p className="skills-list-section-header">Databases</p> : MongoDB, PostgreSQL
+              </div>
+              <div className="skill">
+                <p className="skills-list-section-header">Web Development:</p>  HTML, CSS, SASS, WebSockets, WebRTC
+              </div>
+              <div className="skill">
+                <p className="skills-list-section-header">Other Tools:</p>  Git, Linux, Agile/Scrum methodologies
+              </div>
+              <div className="skill">
+                <p className="skills-list-section-header">Design & Visualization:</p>  d3.js
+              </div>
+            </div>
+          </div>
         </div>
         <div className="education-and-contact-me-wrap">
           <div className="education-wrap">

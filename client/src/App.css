@@ -23,10 +23,6 @@ a, a:hover, a:visited, a:active {
     margin-left: 10px;
     margin-right: 10px;
   }
-
-  .App {
-    padding-top: 42px;
-  }
 }
 
 @media (max-width: 600px) {
@@ -47,10 +43,6 @@ a, a:hover, a:visited, a:active {
     margin-left: 35px;
     display: visible;
     width: 35px;
-  }
-
-  .App {
-    padding-top: 50px;
   }
 }
 
@@ -98,10 +90,6 @@ a, a:hover, a:visited, a:active {
   background-color: white;
   overflow: hidden;
   border-bottom: 0.5px solid #333;
-  position: fixed;
-  top: 0;
-  transition: transform 0.3s ease-in-out;
-  z-index: 1000;
 }
 
 .nav-bar.show {
@@ -450,9 +438,47 @@ a, a:hover, a:visited, a:active {
   font-size: 20px;
 }
 
-.education-and-contact-me-wrap {
+.skills-wrap {
   background-color: #C9ADA7;
-  padding-top: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /* padding-left: 40px;
+  padding-right: 40px; */
+}
+
+.skills-header {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 13px;
+}
+
+.skills {
+  max-width: 1000px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.skill {
+  margin-bottom: 5px;
+}
+
+.skills-list {
+  text-align: left;
+  font-size: 20px;
+}
+
+.skills-list p {
+  display: inline
+}
+
+.skills-list-section-header {
+  font-weight: bold;
+}
+
+.education-and-contact-me-wrap {
+  margin-top: 15px;
 }
 
 .education-wrap {
