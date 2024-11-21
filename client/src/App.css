@@ -23,6 +23,10 @@ a, a:hover, a:visited, a:active {
     margin-left: 10px;
     margin-right: 10px;
   }
+
+  .App {
+    padding-top: 42px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -43,6 +47,10 @@ a, a:hover, a:visited, a:active {
     margin-left: 35px;
     display: visible;
     width: 35px;
+  }
+
+  .App {
+    padding-top: 30px;
   }
 }
 
@@ -90,6 +98,11 @@ a, a:hover, a:visited, a:active {
   background-color: white;
   overflow: hidden;
   border-bottom: 0.5px solid #333;
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  z-index: 1000;
 }
 
 .nav-bar.show {

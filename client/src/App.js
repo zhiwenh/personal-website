@@ -29,7 +29,30 @@ function App() {
   let lastScrollY = window.scrollY;
 
   const navbar = document.getElementById('nav-bar');
-  const links = document.querySelectorAll('.nav-bar a');
+  const links = document.querySelectorAll('.nav-bar-item');
+  console.log('links', links);
+  let isClickingLink = false; // Flag to track link clicks
+
+  function clickNavBarLink() {
+    isClickingLink = true; // Set the flag
+    console.log('isClickingLink', isClickingLink);
+    document.getElementById("nav-bar").style.top = "-50px";
+    setTimeout(() => (isClickingLink = false), 500); // Reset after a short delay
+  }
+
+  var prevScrollpos = window.pageYOffset;
+
+  window.onscroll = function() {
+    if (isClickingLink) return; // Ignore scroll events after a link click
+
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("nav-bar").style.top = "0";
+    } else {
+      document.getElementById("nav-bar").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
 
   useEffect(() => {
     function handleResize() {
@@ -177,34 +200,42 @@ function App() {
           <NavBarItem
             navBarLink="#about-me-id"
             navBarLinkText="About me"
+            clickNavBarLink={clickNavBarLink}
           />
           <NavBarItem
             navBarLink="#links-id"
             navBarLinkText="Links"
+            clickNavBarLink={clickNavBarLink}
           />
           <NavBarItem
             navBarLink="#resume-id"
             navBarLinkText="Resume"
+            clickNavBarLink={clickNavBarLink}
           />
           <NavBarItem
             navBarLink="#projects-id"
             navBarLinkText="Projects"
+            clickNavBarLink={clickNavBarLink}
           />
           <NavBarItem
             navBarLink="#work-experience-id"
             navBarLinkText="Work Experience"
+            clickNavBarLink={clickNavBarLink}
           />
           <NavBarItem
             navBarLink="#skills-id"
             navBarLinkText="Skills"
+            clickNavBarLink={clickNavBarLink}
           />
           <NavBarItem
             navBarLink="#education-id"
             navBarLinkText="Education"
+            clickNavBarLink={clickNavBarLink}
           />
           <NavBarItem
             navBarLink="#contact-me-id"
             navBarLinkText="Contact Me"
+            clickNavBarLink={clickNavBarLink}
           />
         </div>
       </div>
