@@ -31,13 +31,27 @@ function App() {
   const navbar = document.getElementById('nav-bar');
   const links = document.querySelectorAll('.nav-bar-item');
   console.log('links', links);
+
   let isClickingLink = false; // Flag to track link clicks
 
   function clickNavBarLink() {
     isClickingLink = true; // Set the flag
     console.log('isClickingLink', isClickingLink);
-    document.getElementById("nav-bar").style.top = "-50px";
-    setTimeout(() => (isClickingLink = false), 500); // Reset after a short delay
+    document.getElementById("nav-bar").style.top = "-300px";
+    // setShowNav(false);
+    setTimeout(() => (isClickingLink = false), 100); // Reset after a short delay
+
+    if (mobileTabsOn === true) {
+      const navBarItems = document.querySelectorAll('.nav-bar-item');
+      for (let i = 0; i < navBarItems.length; i++) {
+        navBarItems[i].style.visibility = "hidden";
+        navBarItems[i].style.height = "0";
+        navBarItems[i].style.width = "0";
+        navBarItems[i].style.marginBottom = "0px";
+      }
+
+      mobileTabsOn = false;
+    }
   }
 
   var prevScrollpos = window.pageYOffset;
@@ -47,9 +61,11 @@ function App() {
 
     let currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
+      // setShowNav(true);
       document.getElementById("nav-bar").style.top = "0";
     } else {
-      document.getElementById("nav-bar").style.top = "-50px";
+      // setShowNav(false);
+      document.getElementById("nav-bar").style.top = "-300px";
     }
     prevScrollpos = currentScrollPos;
   }
