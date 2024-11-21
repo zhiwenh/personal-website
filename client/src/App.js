@@ -201,7 +201,6 @@ function App() {
     }
   });
 
-  // The return
   return (
     <div>
       <div className="nav-bar-wrap">
@@ -278,21 +277,7 @@ function App() {
               </h>
             </div>
             <div className="about-me">
-              I'm a software engineer with a passion for full stack development and
-              blockchain innovation. Over the years, I've contributed to four
-              companies in blockchain roles, where I developed and optimized
-              decentralized finance (DeFi) applications, ERC20 tokens, NFT platforms,
-              and other groundbreaking blockchain projects. I have also developed my own personal
-              blockchain applications and other software applications. You can explore my projects
-              in the projects section.
-            <br />
-            <br />
-              Beyond blockchain, I bring extensive experience in both front-end and
-              back-end development. I've built and maintained dynamic, user-friendly
-              web applications using frameworks like React and Angular, ensuring
-              seamless performance and scalability (this website is built with React).
-              Whether I'm enhancing the user interface or refining server-side logic,
-              I take pride in delivering complete, high-quality software solutions.
+              I'm a software engineer passionate about full-stack development and blockchain innovation. I’ve worked on DeFi applications, ERC20 tokens, NFT platforms, and personal blockchain projects, turning ideas into impactful solutions. With expertise in React and Angular, I build scalable, user-friendly applications and take pride in delivering high-quality software. Explore my work in the Projects section.
             </div>
           </div>
         </div>
