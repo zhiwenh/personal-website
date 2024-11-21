@@ -56,7 +56,7 @@ function App() {
 
   useEffect(() => {
     function handleResize() {
-      if (window.innerWidth >= 600) {
+      if (window.innerWidth >= 690) {
         if (overWidthAlready === false || widthInit === true) {
           const navBar = document.querySelectorAll('.nav-bar');
           navBar[0].style.display = 'flex';

@@ -3,7 +3,7 @@ a, a:hover, a:visited, a:active {
   text-decoration: none;
  }
 
-@media (min-width: 600px) {
+@media (min-width: 690px) {
   .nav-bar-mobile-button {
     display: none;
     width: 0px;
@@ -29,7 +29,7 @@ a, a:hover, a:visited, a:active {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 690px) {
   .nav-bar {
     flex-direction: column;
   }
@@ -124,8 +124,8 @@ a, a:hover, a:visited, a:active {
 }
 
 .nav-bar-item {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 9px;
+  margin-right: 9px;
   color: #85929E;
   text-align: center;
 }
