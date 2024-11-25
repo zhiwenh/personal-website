@@ -384,6 +384,20 @@ a, a:hover, a:visited, a:active {
   flex-direction: row;
 } */
 
+.work-experience-inner {
+  display: flex;
+  flex-direction: row;
+}
+
+.work-experience-company-image-wrap {
+  margin-right: 20px;
+}
+
+.work-experience-company-image {
+  width: 75px;
+  margin-top: 30px;
+}
+
 .work-experience-company-name-and-dates-worked-wrap {
   display: flex;
   flex-direction: row;
