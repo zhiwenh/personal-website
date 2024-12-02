@@ -3,7 +3,7 @@ import { useRef } from "react";
 import NavBarItem from './NavBarItem.js'
 
 export default function NavBarItem(
-  {navBarLink, navBarLinkText}
+  {navBarLink, navBarLinkText, navBarLinkClassName}
 ) {
   const windowWidith = useRef(
     window.innerWidth
@@ -12,10 +12,7 @@ export default function NavBarItem(
   if (window.innerWidth > 400) {
     return (
       <div className="nav-bar">
-        <div className="nav-bar-logo">
-          ZH
-        </div>
-        <a href={navBarLink} className="nav-bar-link">
+        <a href={navBarLink} className={navBarLinkClassName}>
           {navBarLinkText}
         </a>
       </div>
@@ -23,10 +20,7 @@ export default function NavBarItem(
   } else {
     return (
       <div className="nav-bar-item-small-window">
-      <div className="nav-bar-logo">
-        ZH
-      </div>
-        <a href={navBarLink} className="nav-bar-link-small-window">
+        <a href={navBarLink} className={navBarLinkClassName}>
           {navBarLinkText}
         </a>
       </div>

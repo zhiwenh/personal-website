@@ -598,8 +598,22 @@ a, a:hover, a:visited, a:active {
   text-align: center;
 }
 
+@media (max-width: 850px) {
+  .nav-bar-logo {
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+
+  .nav-bar-item {
+    margin-left: 4px;
+    margin-right: 4px;
+    color: #85929E;
+    text-align: center;
+  }
+}
+
 @media (max-width: 690px) {
   .nav-bar-logo {
-    display: none;
+
   }
 }

@@ -55,13 +55,6 @@ function App() {
         navBarItems[i].style.marginBottom = "0px";
       }
 
-      const navBarLogo = document.querySelectorAll('.nav-bar-logo');
-
-      navBarLogo[0].style.visibility = "hidden";
-      navBarLogo[0].style.height = "0";
-      navBarLogo[0].style.width = "0";
-      navBarLogo[0].style.marginBottom = "0px";
-
       mobileTabsOn = false;
     }
   }
@@ -105,13 +98,6 @@ function App() {
             navBarLinks[0].style.textAlign = 'center';
           }
 
-          const navBarLogo = document.querySelectorAll('.nav-bar-logo');
-
-          navBarLogo[0].style.visibility = "visible";
-          navBarLogo[0].style.height = "auto";
-          navBarLogo[0].style.width = "auto";
-          navBarLogo[0].style.marginBottom = "0px";
-
           if (mobileTabsOn === true) {
             mobileTabsOn = false;
           }
@@ -146,21 +132,6 @@ function App() {
               navBarItems[i].style.marginBottom = "3px";
             }
           }
-
-          const navBarLogo = document.querySelectorAll('.nav-bar-logo');
-
-          if (mobileTabsOn === false) {
-            navBarLogo[0].style.visibility = "hidden";
-            navBarLogo[0].style.height = "0px";
-            navBarLogo[0].style.width = "0px";
-            navBarLogo[0].style.marginBottom = "0px";
-          } else {
-            navBarLogo[0].style.visibility = "visible";
-            navBarLogo[0].style.height = "auto";
-            navBarLogo[0].style.width = "auto";
-            navBarLogo[0].style.marginBottom = "3px";
-          }
-
 
           if (overWidthAlready === true) {
             overWidthAlready = false;
@@ -200,14 +171,6 @@ function App() {
         navBarItems[i].style.marginBottom = "3px";
       }
 
-      const navBarLogo = document.querySelectorAll('.nav-bar-logo');
-
-      navBarLogo[0].style.visibility = "visible";
-      navBarLogo[0].style.height = "auto";
-      navBarLogo[0].style.width = "auto";
-      navBarLogo[0].style.marginBottom = "0px";
-
-
       mobileTabsOn = true;
     } else {
       const navBarItems = document.querySelectorAll('.nav-bar-item');
@@ -217,13 +180,6 @@ function App() {
         navBarItems[i].style.width = "0";
         navBarItems[i].style.marginBottom = "0px";
       }
-
-      const navBarLogo = document.querySelectorAll('.nav-bar-logo');
-
-      navBarLogo[0].style.visibility = "hidden";
-      navBarLogo[0].style.height = "0";
-      navBarLogo[0].style.width = "0";
-      navBarLogo[0].style.marginBottom = "0px";
 
       mobileTabsOn = false;
     }
@@ -262,50 +218,63 @@ function App() {
             <div className="nav-bar-mobile-button-3">
             </div>
           </div>
-          <div className="nav-bar-logo">
-            ZH
-          </div>
+          <NavBarItem
+            navBarLink="#main"
+            navBarLinkText="ZH"
+            clickNavBarLink={clickNavBarLink}
+            navBarLinkClassName="nav-bar-logo"
+          />
           <NavBarItem
             navBarLink="#about-me-id"
             navBarLinkText="About me"
             clickNavBarLink={clickNavBarLink}
+            navBarLinkClassName="nav-bar-link"
           />
           <NavBarItem
             navBarLink="#links-id"
             navBarLinkText="Links"
             clickNavBarLink={clickNavBarLink}
+            navBarLinkClassName="nav-bar-link"
           />
           <NavBarItem
             navBarLink="#resume-id"
             navBarLinkText="Resume"
             clickNavBarLink={clickNavBarLink}
+            navBarLinkClassName="nav-bar-link"
           />
           <NavBarItem
             navBarLink="#projects-id"
             navBarLinkText="Projects"
             clickNavBarLink={clickNavBarLink}
+            navBarLinkClassName="nav-bar-link"
           />
           <NavBarItem
             navBarLink="#work-experience-id"
             navBarLinkText="Work Experience"
             clickNavBarLink={clickNavBarLink}
+            navBarLinkClassName="nav-bar-link"
           />
           <NavBarItem
             navBarLink="#skills-id"
             navBarLinkText="Skills"
             clickNavBarLink={clickNavBarLink}
+            navBarLinkClassName="nav-bar-link"
           />
           <NavBarItem
             navBarLink="#education-id"
             navBarLinkText="Education"
             clickNavBarLink={clickNavBarLink}
+            navBarLinkClassName="nav-bar-link"
           />
           <NavBarItem
             navBarLink="#contact-me-id"
             navBarLinkText="Contact Me"
             clickNavBarLink={clickNavBarLink}
+            navBarLinkClassName="nav-bar-link"
           />
         </div>
+      </div>
+      <div id="main">
       </div>
       <div className="App">
         <div className="name-short-summary-and-about-me-wrap">
