@@ -12,6 +12,9 @@ export default function NavBarItem(
   if (window.innerWidth > 400) {
     return (
       <div className="nav-bar">
+        <div className="nav-bar-logo">
+          ZH
+        </div>
         <a href={navBarLink} className="nav-bar-link">
           {navBarLinkText}
         </a>
@@ -20,6 +23,9 @@ export default function NavBarItem(
   } else {
     return (
       <div className="nav-bar-item-small-window">
+      <div className="nav-bar-logo">
+        ZH
+      </div>
         <a href={navBarLink} className="nav-bar-link-small-window">
           {navBarLinkText}
         </a>

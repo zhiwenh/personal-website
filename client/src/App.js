@@ -55,6 +55,13 @@ function App() {
         navBarItems[i].style.marginBottom = "0px";
       }
 
+      const navBarLogo = document.querySelectorAll('.nav-bar-logo');
+
+      navBarLogo[0].style.visibility = "hidden";
+      navBarLogo[0].style.height = "0";
+      navBarLogo[0].style.width = "0";
+      navBarLogo[0].style.marginBottom = "0px";
+
       mobileTabsOn = false;
     }
   }
@@ -98,6 +105,13 @@ function App() {
             navBarLinks[0].style.textAlign = 'center';
           }
 
+          const navBarLogo = document.querySelectorAll('.nav-bar-logo');
+
+          navBarLogo[0].style.visibility = "visible";
+          navBarLogo[0].style.height = "auto";
+          navBarLogo[0].style.width = "auto";
+          navBarLogo[0].style.marginBottom = "0px";
+
           if (mobileTabsOn === true) {
             mobileTabsOn = false;
           }
@@ -132,6 +146,21 @@ function App() {
               navBarItems[i].style.marginBottom = "3px";
             }
           }
+
+          const navBarLogo = document.querySelectorAll('.nav-bar-logo');
+
+          if (mobileTabsOn === false) {
+            navBarLogo[0].style.visibility = "hidden";
+            navBarLogo[0].style.height = "0px";
+            navBarLogo[0].style.width = "0px";
+            navBarLogo[0].style.marginBottom = "0px";
+          } else {
+            navBarLogo[0].style.visibility = "visible";
+            navBarLogo[0].style.height = "auto";
+            navBarLogo[0].style.width = "auto";
+            navBarLogo[0].style.marginBottom = "3px";
+          }
+
 
           if (overWidthAlready === true) {
             overWidthAlready = false;
@@ -171,6 +200,14 @@ function App() {
         navBarItems[i].style.marginBottom = "3px";
       }
 
+      const navBarLogo = document.querySelectorAll('.nav-bar-logo');
+
+      navBarLogo[0].style.visibility = "visible";
+      navBarLogo[0].style.height = "auto";
+      navBarLogo[0].style.width = "auto";
+      navBarLogo[0].style.marginBottom = "0px";
+
+
       mobileTabsOn = true;
     } else {
       const navBarItems = document.querySelectorAll('.nav-bar-item');
@@ -180,6 +217,13 @@ function App() {
         navBarItems[i].style.width = "0";
         navBarItems[i].style.marginBottom = "0px";
       }
+
+      const navBarLogo = document.querySelectorAll('.nav-bar-logo');
+
+      navBarLogo[0].style.visibility = "hidden";
+      navBarLogo[0].style.height = "0";
+      navBarLogo[0].style.width = "0";
+      navBarLogo[0].style.marginBottom = "0px";
 
       mobileTabsOn = false;
     }
@@ -217,6 +261,9 @@ function App() {
             </div>
             <div className="nav-bar-mobile-button-3">
             </div>
+          </div>
+          <div className="nav-bar-logo">
+            ZH
           </div>
           <NavBarItem
             navBarLink="#about-me-id"
@@ -282,7 +329,12 @@ function App() {
               </h>
             </div>
             <div className="about-me">
-              I'm a software engineer passionate about full-stack development and blockchain innovation. I’ve worked on DeFi applications, ERC20 tokens, NFT platforms, and personal blockchain projects, turning ideas into impactful solutions. With expertise in React and Angular, I build scalable, user-friendly applications and take pride in delivering high-quality software. Explore my work in the Projects section.
+              I'm a software engineer passionate about full-stack development and
+              blockchain innovation. I’ve worked on DeFi applications, ERC20 tokens,
+              NFT platforms, and personal blockchain projects, turning ideas into
+              impactful solutions. With expertise in React and Angular, I build
+              scalable, user-friendly applications and take pride in delivering
+              high-quality software. Explore my work in the projects section.
             </div>
           </div>
         </div>
@@ -326,7 +378,7 @@ function App() {
           <div className="projects-wrap-inner">
           <Project
             projectName="Dex"
-            projectImages={[dexImage, dexImage2]}
+            projectImages={[dexImage]}
             projectDate="2024"
             projectDescription="A decentralized exchange for Ethereum ERC-20 tokens. Works off a single
             smart contract that sits on the Ethereum blockchain. Users can add tokens to trade and trade for other tokens.
@@ -353,7 +405,7 @@ function App() {
           <Project
             projectName="League of Legends Cooldown Tracker"
             projectDate="2019"
-            projectImages={[leagueOfLegendsCooldownTracker, leagueOfLegendsCooldownTracker2]}
+            projectImages={[leagueOfLegendsCooldownTracker2]}
             projectDescription="A cooldown tracker for League of Legends that worked on
             IOS and Android. Used React Native to work on mobile devices."
             projectLink="https://github.com/zhiwenh/lolcooldown"
@@ -369,7 +421,7 @@ function App() {
           <Project
             projectName="Destore"
             projectDate="2016"
-            projectImages={[destoreImage, destoreImage2]}
+            projectImages={[destoreImage2]}
             projectDescription="A file storage platform built on Ethereum. Used IPFS
               for the ability to send files to other people."
             projectLink="https://github.com/zhiwenh/destore"

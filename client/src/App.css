@@ -103,6 +103,7 @@ a, a:hover, a:visited, a:active {
   width: 100%; /* Full width */
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
   z-index: 1000;
+  background-color: #f5f5f5;
 }
 
 .nav-bar.show {
@@ -111,6 +112,12 @@ a, a:hover, a:visited, a:active {
 
 .nav-bar.hide {
   transform: translateY(-100%);
+}
+
+.nav-bar-logo {
+  margin-right: 40px;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .nav-bar a {
@@ -256,6 +263,10 @@ a, a:hover, a:visited, a:active {
   padding-bottom: 30px;
   border-top: 0.5px solid #333;
   border-bottom: 0.5px solid #333;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .projects-header {
@@ -266,7 +277,13 @@ a, a:hover, a:visited, a:active {
 
 .projects-wrap-inner {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 }
 
 .project {
@@ -284,9 +301,12 @@ a, a:hover, a:visited, a:active {
   padding: 20px;
   transition: transform 0.3s ease;
   width: 90%;
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 400px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-name {
@@ -323,7 +343,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .project-image:hover {
-  transform: scale(1.09); /* Increase the scale for zoom effect */
+  transform: scale(1.15); /* Increase the scale for zoom effect */
 }
 
 .project-link-wrap {
@@ -576,4 +596,10 @@ a, a:hover, a:visited, a:active {
 .contact-me-email {
   font-size: 20px;
   text-align: center;
+}
+
+@media (max-width: 690px) {
+  .nav-bar-logo {
+    display: none;
+  }
 }
