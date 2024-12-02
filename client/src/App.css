@@ -395,10 +395,6 @@ a, a:hover, a:visited, a:active {
   margin-right: auto;
 }
 
-.work-experience:hover {
-  transform: translateY(-10px);
-}
-
 /* .work-experience-company-name-and-position-wrap {
   display: flex;
   flex-direction: row;

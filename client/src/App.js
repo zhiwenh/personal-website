@@ -449,7 +449,7 @@ function App() {
             </div>
             <div className="skills-list">
               <div className="skill">
-                <p className="skills-list-section-header">Programming Languages:</p> JavaScript, TypeScript, Python, Ruby, C++, Go
+                <p className="skills-list-section-header">Programming Languages:</p> JavaScript, TypeScript, Python, Ruby, C++, Go, Rust
               </div>
               <div className="skill">
                 <p className="skills-list-section-header">Frameworks & Libraries:</p>  React, Angular, Angular 2, React Native, Django, Express.js, Node.js, Redux, jQuery, Hapi, Tailwind CSS, Next.js, GraphQL
