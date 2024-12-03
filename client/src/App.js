@@ -298,12 +298,16 @@ function App() {
               </h>
             </div>
             <div className="about-me">
-              I'm a software engineer passionate about full-stack development and
-              blockchain innovation. I’ve worked on DeFi applications, ERC20 tokens,
-              NFT platforms, and personal blockchain projects, turning ideas into
-              impactful solutions. With expertise in React and Angular, I build
-              scalable, user-friendly applications and take pride in delivering
-              high-quality software. Explore my work in the projects section.
+              Hi, I’m Zhiwen, a full-stack software engineer with a passion for blockchain
+              technology and decentralized applications. With experience across Ethereum and Solana, 
+              I’ve developed innovative solutions in DeFi, NFTs, and token ecosystems.
+              My work combines technical precision with creative problem-solving, from building
+              smart contracts and DEXs to designing scalable backends and user-friendly frontends.
+              <br/>
+              <br/>
+              Beyond blockchain, I’m skilled in crafting dynamic web and mobile applications
+              using modern frameworks like React, Angular, and Next.js. I take pride in
+              delivering complete, high-quality software solutions that make a meaningful impact.
             </div>
           </div>
         </div>
